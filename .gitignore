@@ -1,9 +1,7 @@
 # Generated compiled files.
 target
+resources/public/js
 log
-www/app*
-www/shell*
-dist
 
 # Dependencies and other side-effect files
 node_modules
