@@ -16,7 +16,9 @@
   :clean-targets ^{:protect false} ["resources/public/js/compiled" "target"]
 
   :figwheel {:css-dirs       ["resources/public/css"]
-             :server-logfile "log/figwheel-logfile.log"}
+             :server-logfile "log/figwheel-logfile.log"
+             :ring-handler   reagent-toolbox-playground.core/app}
+
 
   :profiles {:dev {:dependencies [[binaryage/devtools "0.8.2"]
                                   [com.cemerick/piggieback "0.2.1"]
