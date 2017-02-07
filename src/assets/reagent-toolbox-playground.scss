@@ -1,0 +1,42 @@
+// Copyright © 2017 Flexpoint Tech Ltd. All rights reserved.
+
+@import "cljsjs/react-toolbox/development/react-toolbox.inc";
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+#main-panel {
+  display: flex;
+  flex-flow: row wrap;
+
+  > * {
+    flex: 1 100%;
+  }
+
+  > aside.menu {
+    flex: 1 auto;
+    a {
+      text-decoration: none;
+    }
+  }
+
+  > main {
+    flex: 4 0;
+  }
+}
+
+div.article-with-playground {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1 100%;
+
+  > article {
+    flex: 1;
+  }
+
+  > aside.playground {
+    flex: 1;
+  }
+}

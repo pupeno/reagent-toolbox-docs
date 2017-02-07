@@ -7,7 +7,8 @@
                  [re-frame "0.9.1"]
                  [figwheel-sidecar "0.5.9"]]
 
-  :plugins [[lein-cljsbuild "1.1.4"]]
+  :plugins [[lein-cljsbuild "1.1.4"]
+            [deraen/lein-sass4clj "0.3.0"]]
 
   :min-lein-version "2.5.3"
 
