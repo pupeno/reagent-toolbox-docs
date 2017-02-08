@@ -1,6 +1,7 @@
 # Generated compiled files.
 target
 resources/public/js
+resources/public/css
 log
 
 # Dependencies and other side-effect files

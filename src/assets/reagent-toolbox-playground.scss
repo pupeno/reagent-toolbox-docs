@@ -32,11 +32,9 @@ div.article-with-playground {
   flex-flow: row wrap;
   flex: 1 100%;
 
-  > article {
-    flex: 1;
-  }
+}
 
-  > aside.playground {
-    flex: 1;
-  }
+textarea.code {
+  width: 90%;
+  height: 200px;
 }

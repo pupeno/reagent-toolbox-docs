@@ -14,7 +14,9 @@
 
   :source-paths ["src/clj"]
 
-  :clean-targets ^{:protect false} ["resources/public/js/compiled" "target"]
+  :clean-targets ^{:protect false} ["resources/public/js"
+                                    "resources/public/css"
+                                    "target"]
 
   :figwheel {:css-dirs       ["resources/public/css"]
              :server-logfile "log/figwheel-logfile.log"
@@ -44,3 +46,6 @@
                                        :optimizations   :advanced
                                        :closure-defines {goog.DEBUG false}
                                        :pretty-print    false}}]})
+  :sass {:source-paths ["src/assets"]
+         :target-path  "resources/public/css"
+         :source-map   true}
