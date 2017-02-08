@@ -3,11 +3,13 @@
 (ns reagent-toolbox-playground.core
   (:require [reagent.core :as reagent]
             [re-frame.core :as re-frame]
-            [reagent-toolbox-playground.events]
-            [reagent-toolbox-playground.subs]
-            [reagent-toolbox-playground.views :as views]
+            reagent-toolbox-playground.components.app-bar
+            reagent-toolbox-playground.components.autocomplete
+            reagent-toolbox-playground.components.avatar
+            [reagent-toolbox-playground.db :as db]
+            [reagent-toolbox-playground.routing :as routing]
+            [reagent-toolbox-playground.layout :as layout]
             [reagent-toolbox-playground.config :as config]))
-
 
 (defn dev-setup []
   (when config/debug?
@@ -16,10 +18,11 @@
 
 (defn mount-root []
   (re-frame/clear-subscription-cache!)
-  (reagent/render [views/main-panel]
+  (reagent/render [layout/main-panel]
                   (.getElementById js/document "app")))
 
 (defn ^:export init []
-  (re-frame/dispatch-sync [:initialize-db])
   (dev-setup)
+  (re-frame/dispatch-sync [:initialize-db])
+  (routing/start!)
   (mount-root))
