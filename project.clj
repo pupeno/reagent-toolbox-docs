@@ -12,11 +12,7 @@
                  [ring/ring-defaults "0.2.1"]
                  [ring/ring-jetty-adapter "1.5.0"]
                  [environ "1.1.0"]
-                 [cheshire "5.6.3"]
                  [replumb "0.2.4"]
-                 [org.clojure/tools.reader "1.0.0-beta1"]
-                 [com.cognitect/transit-clj "0.8.285"]
-                 [com.cognitect/transit-cljs "0.8.239"]     ; Needed by replumb.
                  [tech.dashman/reagent-toolbox "0.1.0-SNAPSHOT"]]
 
   :plugins [[lein-cljsbuild "1.1.4"]
