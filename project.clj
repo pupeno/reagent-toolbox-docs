@@ -2,15 +2,15 @@
 
 (defproject tech.dashman/reagent-toolbox-playground "0.1.0-SNAPSHOT"
   :dependencies [[org.clojure/clojure "1.8.0"]
-                 [org.clojure/clojurescript "1.9.229"]
+                 [org.clojure/clojurescript "1.9.456"]
                  [cljsjs/react-with-addons "15.2.1-0"]
                  [reagent "0.6.0" :exclusions [cljsjs/react]]
-                 [re-frame "0.9.1"]
+                 [re-frame "0.9.2"]
                  [com.domkm/silk "0.1.2"]
                  [kibu/pushy "0.3.6"]
-                 [compojure "1.5.1"]
-                 [ring/ring-defaults "0.2.1"]
-                 [ring/ring-jetty-adapter "1.5.0"]
+                 [compojure "1.5.2"]
+                 [ring/ring-defaults "0.2.3"]
+                 [ring/ring-jetty-adapter "1.5.1"]
                  [environ "1.1.0"]
                  [replumb "0.2.4"]
                  [org.clojure/tools.reader "1.0.0-beta1"]   ; Required by replumb
@@ -50,7 +50,7 @@
          :source-map   true}
 
   :profiles {:dev  {:dependencies [[figwheel-sidecar "0.5.9"]
-                                   [binaryage/devtools "0.8.2"]
+                                   [binaryage/devtools "0.9.0"]
                                    [com.cemerick/piggieback "0.2.1"]
                                    [org.clojure/tools.nrepl "0.2.12"]]
                     :repl-options {:nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]}}
