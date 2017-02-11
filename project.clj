@@ -16,6 +16,8 @@
                  [org.clojure/tools.reader "1.0.0-beta1"]   ; Required by replumb
                  [com.cognitect/transit-clj "0.8.297"]      ; Required by replumb
                  [com.cognitect/transit-cljs "0.8.239"]     ; Required by replumb
+                 [cljsjs/codemirror "5.21.0-2"]
+                 [camel-snake-kebab "0.4.0"]
                  [cheshire "5.7.0"]                         ; Required by sass4clj
                  [tech.dashman/reagent-toolbox "0.1.0-SNAPSHOT"]]
 

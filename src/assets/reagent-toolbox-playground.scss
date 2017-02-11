@@ -1,6 +1,7 @@
 // Copyright © 2017 Flexpoint Tech Ltd. All rights reserved.
 
 @import "cljsjs/react-toolbox/development/react-toolbox.inc";
+@import "cljsjs/codemirror/development/codemirror";
 
 html, body {
   margin: 0;
@@ -25,16 +26,4 @@ html, body {
   > main {
     flex: 20 0;
   }
-}
-
-div.article-with-playground {
-  display: flex;
-  flex-flow: row wrap;
-  flex: 1 100%;
-
-}
-
-textarea.code {
-  width: 90%;
-  height: 200px;
 }
