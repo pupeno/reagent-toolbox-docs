@@ -46,7 +46,7 @@
          [:th "Name"]
          [:th "Type"]
          [:th "Default"]
-         [:th "Description"]]]
+         [:th.description "Description"]]]
        [:tbody
         [:tr
          [:td [:code "allow-create"]]
@@ -98,12 +98,12 @@
          [:td [:code "on-change"]]
          [:td [:code "Function"]]
          [:td]
-         [:td "Callback function that is fired when the components&#39;s value changes."]]
+         [:td "Callback function that is fired when the components's value changes."]]
         [:tr
          [:td [:code "on-query-change"]]
          [:td [:code "Function"]]
          [:td]
-         [:td "Callback function that is fired when the components&#39;s query input value changes."]]
+         [:td "Callback function that is fired when the components's query input value changes."]]
         [:tr
          [:td [:code "on-focus"]]
          [:td [:code "Function"]]
@@ -160,11 +160,11 @@
        [:thead
         [:tr
          [:th "Name"]
-         [:th "Description"]]]
+         [:th.description "Description"]]]
        [:tbody
         [:tr
          [:td [:code "active"]]
-         [:td "Used for a suggestion when it&#39;s active."]]
+         [:td "Used for a suggestion when it's active."]]
         [:tr
          [:td [:code "autocomplete"]]
          [:td "Used for the root element."]]
@@ -183,7 +183,7 @@
          [:td "Used to style the suggestions container."]]
         [:tr
          [:td [:code "up"]]
-         [:td "Used for the suggestions when it&#39;s opening to the top."]]
+         [:td "Used for the suggestions when it's opening to the top."]]
         [:tr
          [:td [:code "value"]]
          [:td "Classname used for a single value."]]

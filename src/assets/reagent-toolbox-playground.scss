@@ -25,5 +25,28 @@ html, body {
 
   > main {
     flex: 20 0;
+
+    article {
+      div.CodeMirror {
+        border: 1px solid black;
+      }
+
+      table {
+        border-collapse: collapse;
+
+        th {
+          text-align: left;
+          border-bottom: 1px solid black;
+
+          &.description {
+            width: 50%;
+          }
+        }
+
+        tr:nth-child(even) {
+          background-color: #eeeeee;
+        }
+      }
+    }
   }
 }
