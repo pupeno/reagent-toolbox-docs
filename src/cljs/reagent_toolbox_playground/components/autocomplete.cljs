@@ -50,73 +50,73 @@
        [:tbody
         [:tr
          [:td [:code "allow-create"]]
-         [:td [:code "Bool"]]
+         [:td [:code "boolean"]]
          [:td [:code "false"]]
          [:td "Determines if user can create a new option with the current typed value"]]
         [:tr
          [:td [:code "class-name"]]
-         [:td [:code "String"]]
-         [:td [:code "''"]]
+         [:td [:code "string"]]
+         [:td [:code "\"\""]]
          [:td "Sets a class to style of the Component."]]
         [:tr
          [:td [:code "direction"]]
-         [:td [:code "String"]]
+         [:td [:code "string"]]
          [:td [:code "auto"]]
          [:td "Determines the opening direction. It can be " [:code "auto"] ", " [:code "top"] " or " [:code "down"]
           "."]]
         [:tr
          [:td [:code "disabled"]]
-         [:td [:code "Bool"]]
+         [:td [:code "boolean"]]
          [:td [:code "false"]]
          [:td "If true, component will be disabled."]]
         [:tr
          [:td [:code "error"]]
-         [:td [:code "String"] " or " [:code "Node"]]
+         [:td [:code "string"] " or " "Reagent component"]
          [:td]
          [:td "Sets the error string for the internal input element."]]
         [:tr
          [:td [:code "keep-focus-on-change"]]
-         [:td [:code "Bool"]]
+         [:td [:code "boolean"]]
          [:td [:code "false"]]
          [:td "Whether component should keep focus after value change."]]
         [:tr
          [:td [:code "label"]]
-         [:td [:code "String"] " or " [:code "Node"]]
+         [:td [:code "string"] " or " "Reagent component"]
          [:td]
          [:td "The text string to use for the floating label element."]]
         [:tr
          [:td [:code "multiple"]]
-         [:td [:code "Bool"]]
+         [:td [:code "boolean"]]
          [:td [:code "true"]]
          [:td "If true, component can hold multiple values."]]
         [:tr
          [:td [:code "on-blur"]]
-         [:td [:code "Function"]]
+         [:td [:code "function"]]
          [:td]
          [:td "Callback function that is fired when component is blurred."]]
         [:tr
          [:td [:code "on-change"]]
-         [:td [:code "Function"]]
+         [:td [:code "function"]]
          [:td]
          [:td "Callback function that is fired when the components's value changes."]]
         [:tr
          [:td [:code "on-query-change"]]
-         [:td [:code "Function"]]
+         [:td [:code "function"]]
          [:td]
          [:td "Callback function that is fired when the components's query input value changes."]]
         [:tr
          [:td [:code "on-focus"]]
-         [:td [:code "Function"]]
+         [:td [:code "function"]]
          [:td]
          [:td "Callback function that is fired when component is focused."]]
         [:tr
          [:td [:code "source"]]
-         [:td [:code "Object"] " or " [:code "Array"]]
+         [:td [:code "map"] " or " [:code "vector"]]
          [:td]
          [:td "Object of key/values or array representing all items suggested."]]
         [:tr
          [:td [:code "selected-position"]]
-         [:td [:code "String"]]
+         [:td [:code "string"]]
          [:td [:code "above"]]
          [:td "Determines if the selected list is shown above or below input. It can be "
           [:code "above"] ", "
@@ -124,20 +124,20 @@
           [:code "none"] "."]]
         [:tr
          [:td [:code "show-selected-when-not-in-source"]]
-         [:td [:code "Bool"]]
+         [:td [:code "boolean"]]
          [:td [:code "false"]]
          [:td "Determines if the selected list is shown if the "
           [:code "value"] " keys don't exist in the source. Only works if passing the "
           [:code "value"] " prop as an Object."]]
         [:tr
          [:td [:code "show-suggestions-when-value-is-set"]]
-         [:td [:code "Bool"]]
+         [:td [:code "boolean"]]
          [:td [:code "false"]]
          [:td "If true, the list of suggestions will not be filtered when a value is selected, until the query is"
           "modified."]]
         [:tr
          [:td [:code "suggestion-match"]]
-         [:td [:code "String"]]
+         [:td [:code "string"]]
          [:td [:code "start"]]
          [:td "Determines how suggestions are supplied. It can be "
           [:code "start"] " (query matches the start of a suggestion), "
@@ -145,7 +145,7 @@
           [:code "word"] " (query matches the start of a word in the suggestion)."]]
         [:tr
          [:td [:code "value"]]
-         [:td [:code "String"] ", " [:code "Array"] " or " [:code "Object"]]
+         [:td [:code "string"] ", " [:code "vector"] " or " [:code "map"]]
          [:td]
          [:td "Value or array of values currently selected component."]]]]
       [:p "Additional properties will be passed to the Input Component so you can use " [:code "hint"] ", "
