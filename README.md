@@ -1,4 +1,4 @@
-# reagent-toolbox-playground
+# reagent-toolbox-docs
 
 A mix of documentation and demo of all the [Reagent Toolbox](https://github.com/dashmantech/reagent-toolbox) capabilities. Edit
 

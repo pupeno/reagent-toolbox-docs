@@ -1,6 +1,6 @@
 ;;;; Copyright © 2017 Flexpoint Tech Ltd
 
-(ns reagent-toolbox-playground.routing
+(ns reagent-toolbox-docs.routing
   (:require [reagent.ratom :as ratom :include-macros true]
             [re-frame.core :as re-frame]
             [clojure.set :refer [rename-keys]]

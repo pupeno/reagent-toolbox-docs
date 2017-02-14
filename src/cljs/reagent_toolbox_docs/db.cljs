@@ -1,6 +1,6 @@
 ;;;; Copyright © 2017 Flexpoint Tech Ltd
 
-(ns reagent-toolbox-playground.db
+(ns reagent-toolbox-docs.db
   (:require [re-frame.core :as re-frame]))
 
 (def default-db

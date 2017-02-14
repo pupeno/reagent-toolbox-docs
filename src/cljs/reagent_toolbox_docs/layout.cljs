@@ -1,12 +1,12 @@
 ;;;; Copyright © 2017 Flexpoint Tech Ltd
 
-(ns reagent-toolbox-playground.layout
+(ns reagent-toolbox-docs.layout
   (:require [cljs.pprint :as pp]
             [reagent.core :as reagent]
             [reagent.ratom :as ratom :include-macros true]
             [re-frame.core :as re-frame]
             [reagent-toolbox.core :as rt]
-            [reagent-toolbox-playground.routing :as routing]))
+            [reagent-toolbox-docs.routing :as routing]))
 
 (defn ui-dispatch
   "Re-frame dispatch enhanced for UI. On top of re-frame-dispatching args, it:
@@ -28,9 +28,9 @@
   (let [current-route (re-frame/subscribe [:current-route])]
     (fn []
       [:div#main-panel
-       [rt/app-bar {:left-icon "home"
+       [rt/app-bar {:left-icon          "home"
                     :on-left-icon-click #(routing/redirect-to :home)
-                    :title "Reagent Toolbox"}]
+                    :title              "Reagent Toolbox"}]
        [:aside.menu
         [rt/list {:selectable true :ripple true}
          (map (fn [[legend name]]

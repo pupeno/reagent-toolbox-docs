@@ -1,6 +1,6 @@
 ;;;; Copyright © 2017 Flexpoint Tech Ltd
 
-(defproject tech.dashman/reagent-toolbox-playground "0.1.0-SNAPSHOT"
+(defproject tech.dashman/reagent-toolbox-docs "0.1.0-SNAPSHOT"
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [org.clojure/clojurescript "1.9.456"]
                  [cljsjs/react-with-addons "15.2.1-0"]
@@ -35,11 +35,11 @@
 
   :figwheel {:css-dirs       ["resources/public/css"]
              :server-logfile "log/figwheel-logfile.log"
-             :ring-handler   reagent-toolbox-playground.core/app}
+             :ring-handler   reagent-toolbox-docs.core/app}
 
-  :cljsbuild {:builds {:app {:source-paths ["src/cljs"]
-                             :figwheel     {:on-jsload "reagent-toolbox-playground.core/mount-root"}
-                             :compiler     {:main                 reagent-toolbox-playground.core
+  :cljsbuild {:builds {:app {:source-paths ["src/cljs"]     ; Add "checkouts/reagent-toolbox/src/cljs" to load it on the fly.
+                             :figwheel     {:on-jsload "reagent-toolbox-docs.core/mount-root"}
+                             :compiler     {:main                 reagent-toolbox-docs.core
                                             :output-to            "resources/public/js/app.js"
                                             :output-dir           "resources/public/js"
                                             :asset-path           "js/"

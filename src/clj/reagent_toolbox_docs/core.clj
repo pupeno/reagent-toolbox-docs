@@ -1,6 +1,6 @@
 ;;;; Copyright © 2017 Flexpoint Tech Ltd
 
-(ns reagent-toolbox-playground.core
+(ns reagent-toolbox-docs.core
   (:require [compojure.core :refer :all]
             [compojure.route :as route]
             [compojure.handler :refer [site]]

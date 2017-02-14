@@ -1,6 +1,6 @@
 ;;;; Copyright © 2017 Flexpoint Tech Ltd
 
-(ns reagent-toolbox-playground.ui
+(ns reagent-toolbox-docs.ui
   (:require [reagent.core :as reagent]
             cognitect.transit
             [replumb.core :as replumb]

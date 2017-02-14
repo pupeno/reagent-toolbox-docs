@@ -1,8 +1,8 @@
 ;;;; Copyright © 2017 Flexpoint Tech Ltd
 
-(ns reagent-toolbox-playground.components.autocomplete
-  (:require [reagent-toolbox-playground.ui :as ui]
-            [reagent-toolbox-playground.layout :as layout])
+(ns reagent-toolbox-docs.components.autocomplete
+  (:require [reagent-toolbox-docs.ui :as ui]
+            [reagent-toolbox-docs.layout :as layout])
   (:import goog.net.XhrIo))
 
 (defn view []
