@@ -10,7 +10,8 @@
 (def routes (silk/routes [[:home [[]]]
                           [:app-bar [["app-bar"]]]
                           [:autocomplete [["autocomplete"]]]
-                          [:avatar [["avatar"]]]]))
+                          [:avatar [["avatar"]]]
+                          [:time-picker [["time-picker"]]]]))
 
 (defn- sanitize-silk-keywords [matched-route]
   (rename-keys matched-route {:domkm.silk/name    :name

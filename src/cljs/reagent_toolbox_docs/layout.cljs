@@ -39,7 +39,8 @@
                                :to     (routing/url-for name)}])
               [["App Bar" :app-bar]
                ["Autocomplete" :autocomplete]
-               ["Avatar" :avatar]])]]
+               ["Avatar" :avatar]
+               ["Time Picker" :time-picker]])]]
        [:main ^{:key @current-route} [pages @current-route]]
        [:footer
         [:p

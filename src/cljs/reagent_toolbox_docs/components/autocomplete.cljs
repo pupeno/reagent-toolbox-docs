@@ -2,8 +2,7 @@
 
 (ns reagent-toolbox-docs.components.autocomplete
   (:require [reagent-toolbox-docs.ui :as ui]
-            [reagent-toolbox-docs.layout :as layout])
-  (:import goog.net.XhrIo))
+            [reagent-toolbox-docs.layout :as layout]))
 
 (defn view []
   (fn []
@@ -11,7 +10,6 @@
      [:h1 "Autocomplete"]
      [:p "An input field with a set of predeterminated labeled values. When it's focused it shows a list of options that are filtered by label as the user types. They can be simple or multiple depending on the amount of values that can be selected. The opening direction is determined by its current position at opening time."]
      [:code
-      #_[ui/display-and-eval-code "[autocomplete-test]"]
       [ui/display-and-eval-code "
 (defn autocomplete-test []
   (let [single-value (reagent.ratom/atom \"\")

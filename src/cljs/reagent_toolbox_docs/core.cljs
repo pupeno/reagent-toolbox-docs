@@ -6,6 +6,7 @@
             reagent-toolbox-docs.components.app-bar
             reagent-toolbox-docs.components.autocomplete
             reagent-toolbox-docs.components.avatar
+            reagent-toolbox-docs.components.time-picker
             [reagent-toolbox-docs.db :as db]
             [reagent-toolbox-docs.routing :as routing]
             [reagent-toolbox-docs.layout :as layout]
