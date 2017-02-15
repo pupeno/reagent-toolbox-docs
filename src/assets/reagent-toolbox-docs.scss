@@ -45,6 +45,10 @@ html, body {
         tr:nth-child(even) {
           background-color: #eeeeee;
         }
+
+        td {
+          vertical-align: top;
+        }
       }
     }
   }
