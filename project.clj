@@ -54,7 +54,8 @@
                        :dependencies [[figwheel-sidecar "0.5.9"]
                                       [binaryage/devtools "0.9.0"]
                                       [com.cemerick/piggieback "0.2.1"]
-                                      [org.clojure/tools.nrepl "0.2.12"]]
+                                      [org.clojure/tools.nrepl "0.2.12"]
+                                      [org.slf4j/slf4j-nop "1.7.13"]]
                        :figwheel     {:css-dirs       ["resources/public/css"]
                                       :server-logfile "log/figwheel-logfile.log"
                                       :ring-handler   reagent-toolbox-docs.core/app}
