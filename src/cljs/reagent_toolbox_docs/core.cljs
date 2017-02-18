@@ -12,18 +12,13 @@
             [reagent-toolbox-docs.layout :as layout]
             [reagent-toolbox-docs.config :as config]))
 
-(defn dev-setup []
-  (when config/debug?
-    (enable-console-print!)
-    (println "dev mode")))
-
 (defn mount-root []
   (re-frame/clear-subscription-cache!)
   (reagent/render [layout/main-panel]
                   (.getElementById js/document "app")))
 
 (defn ^:export init []
-  (dev-setup)
+  (enable-console-print!)
   (re-frame/dispatch-sync [:initialize-db])
   (routing/start!)
   (mount-root))
