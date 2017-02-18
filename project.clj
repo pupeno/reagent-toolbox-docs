@@ -24,7 +24,8 @@
   :plugins [[lein-cljsbuild "1.1.4"]
             [lein-figwheel "0.5.9"]
             [deraen/lein-sass4clj "0.3.0"]
-            [lein-heroku "0.5.3"]]
+            [lein-heroku "0.5.3"]
+            [lein-shell "0.5.0"]]
 
   :min-lein-version "2.5.3"
 
@@ -41,11 +42,12 @@
                                             :asset-path "js/"}}}}
 
   :sass {:source-paths ["src/assets"]
-         :target-path  "resources/public/css"
-         :source-map   true}
+         :target-path  "resources/public/css"}
 
   :uberjar-name "reagent-toolbox-docs-standalone.jar"
   :heroku {:app-name "reagent-toolbox-docs"}
+
+  :shell {:commands {"lein" {:windows ["cmd.exe" "/c" "lein.bat"]}}}
 
   :profiles {:dev     {:cljsbuild    {:builds {:app {:compiler {:preloads             [devtools.preload]
                                                                 :source-map-timestamp true
@@ -64,10 +66,11 @@
                        :aot         :all
                        :env         {:production "true"}
                        :hooks       [leiningen.cljsbuild]
-                       :prep-tasks  [["cljsbuild" "once"]
-                                     "javac"
+                       :prep-tasks  ["javac"
                                      "compile"
-                                     #_["sass4clj" "once"]]
+                                     #_["sass4clj" "once"]  ; This should be the correct way of compiling SCSS, but: https://github.com/Deraen/sass4clj/issues/18
+                                     ["cljsbuild" "once"]
+                                     ["shell" "lein" "sass4clj" "once"]]
                        :cljsbuild   {:jar    true
                                      :builds {:app {:compiler {:optimizations   :advanced
                                                                :closure-defines {goog.DEBUG false}
