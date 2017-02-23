@@ -27,4 +27,4 @@
                                :on-change (fn [doc change]
                                             (reset! code (.getValue doc))
                                             (eval-code->result!))}]
-       @result])))
+       [:div @result]])))
