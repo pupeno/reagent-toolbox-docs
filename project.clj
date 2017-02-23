@@ -36,10 +36,13 @@
                                     "target"]
 
   :cljsbuild {:builds {:app {:source-paths ["src/cljs"]     ; Add "../reagent-toolbox/src/cljs" to load it on the fly.
-                             :compiler     {:main       reagent-toolbox-docs.core
-                                            :output-to  "resources/public/js/app.js"
-                                            :output-dir "resources/public/js"
-                                            :asset-path "js/"}}}}
+                             :compiler     {:main          reagent-toolbox-docs.core
+                                            :output-to     "resources/public/js/app.js"
+                                            :output-dir    "resources/public/js"
+                                            :asset-path    "js/"
+                                            :source-map    true
+                                            :pretty-print  true
+                                            :optimizations :none}}}}
 
   :sass {:source-paths ["src/assets"]
          :target-path  "resources/public/css"}
@@ -72,6 +75,4 @@
                                      ["cljsbuild" "once"]
                                      ["shell" "lein" "sass4clj" "once"]]
                        :cljsbuild   {:jar    true
-                                     :builds {:app {:compiler {:optimizations   :advanced
-                                                               :closure-defines {goog.DEBUG false}
-                                                               :pretty-print    false}}}}}})
+                                     :builds {:app {:compiler {:closure-defines {goog.DEBUG false}}}}}}})
