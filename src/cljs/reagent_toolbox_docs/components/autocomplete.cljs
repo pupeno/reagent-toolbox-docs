@@ -9,8 +9,7 @@
     [:article
      [:h1 "Autocomplete"]
      [:p "An input field with a set of predeterminated labeled values. When it's focused it shows a list of options that are filtered by label as the user types. They can be simple or multiple depending on the amount of values that can be selected. The opening direction is determined by its current position at opening time."]
-     [:code
-      [ui/display-and-eval-code "
+     [ui/display-and-eval-code "
 (defn autocomplete-test []
   (let [single-value (reagent.ratom/atom \"\")
         multi-value (reagent.ratom/atom [])]
@@ -34,7 +33,7 @@
                                              :hint      \"You can many...\"
                                              :on-change #(reset! multi-value %)}]]))))
 
-[autocomplete-test]"]]
+[autocomplete-test]"]
      [:p "If you want to provide a theme via context, the component key is RTAutocomplete."]
      [:section
       [:h2 "Properties"]
