@@ -40,6 +40,7 @@
               [["App Bar" :app-bar]
                ["Autocomplete" :autocomplete]
                ["Avatar" :avatar]
+               ["Input" :input]
                ["Time Picker" :time-picker]])]]
        [:main ^{:key @current-route} [pages @current-route]]
        [:footer

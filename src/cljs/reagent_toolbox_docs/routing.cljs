@@ -11,6 +11,7 @@
                           [:app-bar [["app-bar"]]]
                           [:autocomplete [["autocomplete"]]]
                           [:avatar [["avatar"]]]
+                          [:input [["input"]]]
                           [:time-picker [["time-picker"]]]]))
 
 (defn- sanitize-silk-keywords [matched-route]
