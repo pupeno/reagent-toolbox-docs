@@ -2,54 +2,58 @@
 @import "cljsjs/react-toolbox/development/react-toolbox.inc";
 @import "cljsjs/codemirror/development/codemirror";
 
+// Page layout.
 html, body {
   margin: 0;
   padding: 0;
-}
 
-#main-panel {
-  display: flex;
-  flex-flow: row wrap;
+  #app {
+    #whole-page-wrapper {
+      display: flex;
+      flex-direction: column;
+      #main-and-asides {
+        display: flex;
+        flex-direction: row;
 
-  > * {
-    flex: 1 100%;
-  }
-
-  > aside.menu {
-    flex: 1 auto;
-    a {
-      text-decoration: none;
-    }
-  }
-
-  > main {
-    flex: 20 0;
-
-    article {
-      div.CodeMirror {
-        border: 1px solid black;
-      }
-
-      table {
-        border-collapse: collapse;
-
-        th {
-          text-align: left;
-          border-bottom: 1px solid black;
-
-          &.description {
-            width: 50%;
+        aside.menu {
+          a {
+            text-decoration: none;
           }
         }
 
-        tr:nth-child(even) {
-          background-color: #eeeeee;
-        }
-
-        td {
-          vertical-align: top;
+        main.content {
+          min-width: 0; // This makes the page not expand horizontally beyond the view-port, forcing code samples to have a horizontal scroll bar when necessary: https://weblog.west-wind.com/posts/2016/Feb/15/Flexbox-Containers-PRE-tags-and-managing-Overflow
         }
       }
     }
   }
 }
+
+// Code editor.
+div.CodeMirror {
+  border: 1px solid black;
+  margin: 10px 0;
+}
+
+// Tables.
+main.content article table {
+  border-collapse: collapse;
+
+  th {
+    text-align: left;
+    border-bottom: 1px solid black;
+  }
+
+  tr:nth-child(even) {
+    background-color: #eeeeee;
+  }
+
+  td, th {
+    padding: 0 1%;
+  }
+
+  td {
+    vertical-align: top;
+  }
+}
+

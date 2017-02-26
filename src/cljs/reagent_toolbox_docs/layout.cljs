@@ -27,27 +27,25 @@
 (defn main-panel []
   (let [current-route (re-frame/subscribe [:current-route])]
     (fn []
-      [:div#main-panel
+      [:div#whole-page-wrapper
        [rt/app-bar {:left-icon          "home"
                     :on-left-icon-click #(routing/redirect-to :home)
                     :title              "Reagent Toolbox"}]
-       [:aside.menu
-        [rt/list {:selectable true :ripple true}
-         (map (fn [[legend name]]
-                ^{:key name}
-                [rt/list-item {:legend legend
-                               :to     (routing/url-for name)}])
-              [["App Bar" :app-bar]
-               ["Autocomplete" :autocomplete]
-               ["Avatar" :avatar]
-               ["Input" :input]
-               ["Time Picker" :time-picker]])]]
-       [:main ^{:key @current-route} [pages @current-route]]
+       [:div#main-and-asides
+        [:aside.menu
+         [rt/list {:selectable true :ripple true}
+          (map (fn [[legend name]]
+                 ^{:key name}
+                 [rt/list-item {:legend legend
+                                :to     (routing/url-for name)}])
+               [["App Bar" :app-bar]
+                ["Autocomplete" :autocomplete]
+                ["Avatar" :avatar]
+                ["Input" :input]
+                ["Time Picker" :time-picker]])]]
+        [:main.content ^{:key @current-route} [pages @current-route]]]
        [:footer
-        [:p
-         "Sponsored by "
-         [:a {:href "https://dashman.tech"} "Dashman"]
-         ". Copyright © 2017 Flexpoint Tech."]]])))
+        [:p "Sponsored by " [:a {:href "https://dashman.tech"} "Dashman"] ". Copyright © 2017 Flexpoint Tech."]]])))
 
 (defmethod pages :home [_]
   (fn [_]
