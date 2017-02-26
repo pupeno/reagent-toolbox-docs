@@ -4,7 +4,6 @@
   (:require [reagent-toolbox-docs.ui :as ui]
             [reagent-toolbox-docs.layout :as layout]))
 
-
 (defn view []
   (fn []
     [:article
@@ -89,7 +88,162 @@
                                                                   \"?\"]]}]])))
 
 [input-test]"]
-     [:p "If you want to provide a theme via context, the component key is " [:code "RTInput"] "."]]))
+     [:p "If you want to provide a theme via context, the component key is " [:code "RTInput"] "."]
+     [:section
+      [:h2 "Properties"]
+      [:table
+       [:thead
+        [:tr
+         [:th "Name"]
+         [:th "Type"]
+         [:th "Default"]
+         [:th "Description"]]]
+       [:tbody
+        [:tr
+         [:td [:code "class-name"]]
+         [:td [:code "string"]]
+         [:td [:code "\"\""]]
+         [:td "Sets a class name to give custom styles."]]
+        [:tr
+         [:td [:code "disabled"]]
+         [:td [:code "boolean"]]
+         [:td [:code "false"]]
+         [:td "If true, component will be disabled."]]
+        [:tr
+         [:td [:code "error"]]
+         [:td [:code "string"] " or Reagent component"]
+         [:td]
+         [:td "Give an error node to display under the field."]]
+        [:tr
+         [:td [:code "floating"]]
+         [:td [:code "boolean"]]
+         [:td [:code "true"]]
+         [:td "Indicates if the label is floating in the input field or not."]]
+        [:tr
+         [:td [:code "hint"]]
+         [:td [:code "string"] " or Reagent component"]
+         [:td [:code "\"\""]]
+         [:td "The text string to use for hint text element."]]
+        [:tr
+         [:td [:code "icon"]]
+         [:td [:code "string"] " or Reagent component"]
+         [:td]
+         [:td "Name of an icon to use as a label for the input."]]
+        [:tr
+         [:td [:code "label"]]
+         [:td [:code "string"] " or Reagent component"]
+         [:td]
+         [:td "The text string to use for the floating label element."]]
+        [:tr
+         [:td [:code "max-length"]]
+         [:td [:code "number"]]
+         [:td]
+         [:td "Specifies the maximum number of characters allowed in the component."]]
+        [:tr
+         [:td [:code "multiline"]]
+         [:td [:code "boolean"]]
+         [:td [:code "false"]]
+         [:td "If true, a textarea element will be rendered. The textarea also grows and shrinks according to the number of lines."]]
+        [:tr
+         [:td [:code "rows"]]
+         [:td [:code "number"]]
+         [:td]
+         [:td "The number of rows the multiline input field has."]]
+        [:tr
+         [:td [:code "on-blur"]]
+         [:td [:code "function"]]
+         [:td]
+         [:td "Callback function that is fired when component is blurred."]]
+        [:tr
+         [:td [:code "on-change"]]
+         [:td [:code "function"]]
+         [:td]
+         [:td "Callback function that is fired when the component\"s value changes."]]
+        [:tr
+         [:td [:code "on-focus"]]
+         [:td [:code "function"]]
+         [:td]
+         [:td "Callback function that is fired when component is focused."]]
+        [:tr
+         [:td [:code "on-key-press"]]
+         [:td [:code "function"]]
+         [:td]
+         [:td "Callback function that is fired when a key is pressed."]]
+        [:tr
+         [:td [:code "required"]]
+         [:td [:code "boolean"]]
+         [:td [:code "false"]]
+         [:td "If true, the html input has a required attribute."]]
+        [:tr
+         [:td [:code "type"]]
+         [:td [:code "string"]]
+         [:td [:code "text"]]
+         [:td "Type of the input element. It can be a valid HTML5 input type"]]
+        [:tr
+         [:td [:code "value"]]
+         [:td [:code "any"]]
+         [:td]
+         [:td "Current value of the input element."]]]]]
+     [:section
+      [:h2 "Theming"]
+      [:table
+       [:thead
+        [:tr
+         [:th "Name"]
+         [:th "Description"]]]
+       [:tbody
+        [:tr
+         [:td [:code "bar"]]
+         [:td "Used for the bar under the input."]]
+        [:tr
+         [:td [:code "counter"]]
+         [:td "Used for the counter element."]]
+        [:tr
+         [:td [:code "disabled"]]
+         [:td "Added to the root class when input is disabled."]]
+        [:tr
+         [:td [:code "error"]]
+         [:td "Used for the text error."]]
+        [:tr
+         [:td [:code "errored"]]
+         [:td "Added to the root class when input is errored."]]
+        [:tr
+         [:td [:code "hidden"]]
+         [:td "Used when the input is hidden."]]
+        [:tr
+         [:td [:code "hint"]]
+         [:td "Used for the hint text."]]
+        [:tr
+         [:td [:code "icon"]]
+         [:td "Used for the icon in case the input has icon."]]
+        [:tr
+         [:td [:code "input"]]
+         [:td "Used as root class for the component."]]
+        [:tr
+         [:td [:code "inputElement"]]
+         [:td "Used for the HTML input element."]]
+        [:tr
+         [:td [:code "label"]]
+         [:td "Used for the label when the input has a label."]]
+        [:tr
+         [:td [:code "required"]]
+         [:td "Used in case the input is required."]]
+        [:tr
+         [:td [:code "withIcon"]]
+         [:td "Added to the root class if the input has icon."]]]]]
+     [:section
+      [:h2 "Methods"]
+      [:p "The " [:code "Input"] " component has some imperative methods that are used as a bypass to the native "
+       "rendered DOM element. To call this methods you will need to retrieve the instance of the component. Check the "
+       [:a {:href "http://react-toolbox.com/#/install"} "Install"] " section for details on how to do this. The "
+       "methods included for the " [:code "Input"] " are:"]
+      [:ul
+       [:li
+        [:code "blur"] " used to blur the "
+        [:code "input"] " element."]
+       [:li
+        [:code "focus"] " used to focus the "
+        [:code "input"] " element."]]]]))
 
 (defmethod layout/pages :input [_]
   [view])
