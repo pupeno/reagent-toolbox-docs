@@ -35,7 +35,7 @@
                                     "resources/public/css"
                                     "target"]
 
-  :cljsbuild {:builds {:app {:source-paths ["src/cljs"]     ; Add "../reagent-toolbox/src/cljs" to load it on the fly.
+  :cljsbuild {:builds {:app {:source-paths ["src/cljs"]
                              :compiler     {:main          reagent-toolbox-docs.core
                                             :output-to     "resources/public/js/app.js"
                                             :output-dir    "resources/public/js"
@@ -52,10 +52,11 @@
 
   :shell {:commands {"lein" {:windows ["cmd.exe" "/c" "lein.bat"]}}}
 
-  :profiles {:dev     {:cljsbuild    {:builds {:app {:compiler {:preloads             [devtools.preload]
-                                                                :source-map-timestamp true
-                                                                :external-config      {:devtools/config {:features-to-install :all}}}
-                                                     :figwheel {:on-jsload "reagent-toolbox-docs.core/mount-root"}}}}
+  :profiles {:dev     {:cljsbuild    {:builds {:app {:source-paths ["checkouts/reagent-toolbox/src/cljs"]
+                                                     :compiler     {:preloads             [devtools.preload]
+                                                                    :source-map-timestamp true
+                                                                    :external-config      {:devtools/config {:features-to-install :all}}}
+                                                     :figwheel     {:on-jsload "reagent-toolbox-docs.core/mount-root"}}}}
                        :dependencies [[figwheel-sidecar "0.5.9"]
                                       [binaryage/devtools "0.9.0"]
                                       [com.cemerick/piggieback "0.2.1"]
