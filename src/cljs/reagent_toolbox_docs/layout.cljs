@@ -41,6 +41,7 @@
                [["App Bar" :app-bar]
                 ["Autocomplete" :autocomplete]
                 ["Avatar" :avatar]
+                ["Button" :button]
                 ["Input" :input]
                 ["Time Picker" :time-picker]])]]
         [:main.content ^{:key @current-route} [pages @current-route]]]

@@ -11,6 +11,7 @@
                           [:app-bar [["app-bar"]]]
                           [:autocomplete [["autocomplete"]]]
                           [:avatar [["avatar"]]]
+                          [:button [["button"]]]
                           [:input [["input"]]]
                           [:time-picker [["time-picker"]]]]))
 
