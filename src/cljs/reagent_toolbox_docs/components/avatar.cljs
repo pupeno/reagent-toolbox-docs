@@ -5,8 +5,8 @@
             [reagent-toolbox-docs.ui :as ui]))
 
 
-(defmethod layout/pages :avatar [_]
-  (fn [_]
+(defn view []
+  (fn []
     [:article
      [:h1 "Avatar"]
      [:p "Avatars can be used to represent people. This offer users the ability to personalize their avatar or provide "
@@ -86,3 +86,6 @@
        [:tr
         [:td [:code "letter"]]
         [:td "Used for the root element if the component shows the letter."]]]]]))
+
+(defmethod layout/pages :avatar [_]
+  [view])

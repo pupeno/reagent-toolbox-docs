@@ -4,7 +4,7 @@
   (:require [reagent-toolbox-docs.layout :as layout]
             [reagent-toolbox-docs.ui :as ui]))
 
-(defmethod layout/pages :button []
+(defn view []
   (fn []
     [:article
      [:h1 "Button"]
@@ -209,3 +209,5 @@
        "We provide an " [:code "icon-button"] " component bundled with " [:code "button"] " component. They share a "
        "similar API excluding onMouseLeave, onMouseUp and aspect properties."]]]))
 
+(defmethod layout/pages :button [_]
+  [view])
