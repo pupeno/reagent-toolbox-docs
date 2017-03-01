@@ -12,6 +12,7 @@
                           [:autocomplete [["autocomplete"]]]
                           [:avatar [["avatar"]]]
                           [:button [["button"]]]
+                          [:checkbox [["checkbox"]]]
                           [:input [["input"]]]
                           [:time-picker [["time-picker"]]]]))
 

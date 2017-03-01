@@ -7,6 +7,7 @@
             reagent-toolbox-docs.components.autocomplete
             reagent-toolbox-docs.components.avatar
             reagent-toolbox-docs.components.button
+            reagent-toolbox-docs.components.checkbox
             reagent-toolbox-docs.components.input
             reagent-toolbox-docs.components.time-picker
             [reagent-toolbox-docs.db :as db]
