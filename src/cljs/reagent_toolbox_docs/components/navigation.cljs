@@ -16,13 +16,73 @@
       "(defn navigation-test
          []
          (let [actions [{:label \"Alarm\" :raised true :icon \"access_alarm\"}
-                        {:label \"Location\" :raised true :accent true :icon \"room\"}]]
+                        {:label \"Location\" :raised true :accent true :icon \"room\"}]
+               routes [{:href \"/navigation\" :label \"Inbox\" :icon \"inbox\"}
+                       {:href \"/naviation\" :active true :label \"Profile\" :icon \"person\"}]]
            (fn []
              [:div
               [reagent-toolbox.core/navigation {:type \"horizontal\" :actions actions}]
-])))
-       [navigation-test]"]
-     ]))
+              [reagent-toolbox.core/navigation {:type \"vertical\" :routes routes}]])))
 
-(defmethod layout/pages :checkbox [_]
+       [navigation-test]"]
+
+     [:p "If you want to provide a theme via context, the component key RTCheckbox."]
+
+     [:section
+      [:h2 "Properties"]
+
+      [:table
+       [:thead
+        [:tr
+         [:th "Name"]
+         [:th "Type"]
+         [:th "Default"]
+         [:th "Description"]]]
+       [:tbody
+        [:tr
+         [:td [:code "actions"]]
+         [:td [:code "vector"]]
+         [:td [:code ""]]
+         [:td "Vector of maps that will be represented as buttons so the keys will be "
+          "transferred as properties the button component."]]
+        [:tr
+         [:td [:code "class-name"]]
+         [:td [:code "string"]]
+         [:td]
+         [:td "Set a custom class styles to style the navigation."]]
+        [:tr
+         [:td [:code "routes"]]
+         [:td [:code "vector"]]
+         [:td]
+         [:td "Vector of maps similar to actions but that will be rendered as link "
+          "component definition."]]
+        [:tr
+         [:td [:code "type"]]
+         [:td [:code "String"]]
+         [:td [:code "horizontal"]]
+         [:td "Type of the navigation, it can be vertical or horizontal."]]]]]
+
+     [:section
+      [:h2 "Theme"]
+
+      [:table
+       [:thead
+        [:tr
+         [:th "Name"]
+         [:th "Description"]]]
+       [:tbody
+        [:tr
+         [:td [:code "button"]]
+         [:td "Used for buttons provided in the component."]]
+        [:tr
+         [:td [:code "horizontal"]]
+         [:td "Used for the root element if the layout is horizontal."]]
+        [:tr
+         [:td [:code "link"]]
+         [:td "Used for links provided in the component."]]
+        [:tr
+         [:td [:code "vertical"]]
+         [:td "Used for the root element if the layout is vertical."]]]]]]))
+
+(defmethod layout/pages :navigation [_]
   [view])
