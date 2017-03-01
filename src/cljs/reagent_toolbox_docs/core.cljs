@@ -9,6 +9,7 @@
             reagent-toolbox-docs.components.button
             reagent-toolbox-docs.components.checkbox
             reagent-toolbox-docs.components.input
+            reagent-toolbox-docs.components.link
             reagent-toolbox-docs.components.time-picker
             [reagent-toolbox-docs.db :as db]
             [reagent-toolbox-docs.routing :as routing]
