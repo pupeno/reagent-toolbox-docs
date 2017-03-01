@@ -15,6 +15,7 @@
                           [:checkbox [["checkbox"]]]
                           [:input [["input"]]]
                           [:link [["link"]]]
+                          [:navigation [["navigation"]]]
                           [:time-picker [["time-picker"]]]]))
 
 (defn- sanitize-silk-keywords [matched-route]

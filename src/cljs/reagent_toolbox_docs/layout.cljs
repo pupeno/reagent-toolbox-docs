@@ -45,6 +45,7 @@
                 ["Checkbox" :checkbox]
                 ["Input" :input]
                 ["Link" :link]
+                ["Navigation" :navigation]
                 ["Time Picker" :time-picker]])]]
         [:main.content ^{:key @current-route} [pages @current-route]]]
        [:footer
