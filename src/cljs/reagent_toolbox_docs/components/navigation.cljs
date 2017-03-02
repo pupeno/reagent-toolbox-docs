@@ -17,12 +17,25 @@
          []
          (let [actions [{:label \"Alarm\" :raised true :icon \"access_alarm\"}
                         {:label \"Location\" :raised true :accent true :icon \"room\"}]
-               routes [{:href \"/navigation\" :label \"Inbox\" :icon \"inbox\"}
-                       {:href \"/naviation\" :active true :label \"Profile\" :icon \"person\"}]]
+               routes [{:href \"/navigation\"
+                        :label \"Favorite\"
+                        :icon \"favorite\"}
+                       {:href \"/navigation\"
+                        :active true
+                        :label \"History\"
+                        :icon \"history\"}]]
            (fn []
              [:div
               [reagent-toolbox.core/navigation {:type \"horizontal\" :actions actions}]
-              [reagent-toolbox.core/navigation {:type \"vertical\" :routes routes}]])))
+              [reagent-toolbox.core/navigation {:type \"vertical\"}
+               [reagent-toolbox.core/link {:href \"/navigation\"
+                                           :label \"Inbox\"
+                                           :icon \"inbox\"}]
+               [reagent-toolbox.core/link {:href \"/navigation\"
+                                           :active true
+                                           :label \"Profile\"
+                                           :icon \"person\"}]]
+              [reagent-toolbox.core/navigation {:routes routes}]])))
 
        [navigation-test]"]
 
