@@ -13,6 +13,7 @@
                           [:avatar [["avatar"]]]
                           [:button [["button"]]]
                           [:checkbox [["checkbox"]]]
+                          [:font-icon [["font-icon"]]]
                           [:input [["input"]]]
                           [:link [["link"]]]
                           [:navigation [["navigation"]]]

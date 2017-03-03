@@ -43,6 +43,7 @@
                 ["Avatar" :avatar]
                 ["Button" :button]
                 ["Checkbox" :checkbox]
+                ["Font Icon" :font-icon]
                 ["Input" :input]
                 ["Link" :link]
                 ["Navigation" :navigation]
