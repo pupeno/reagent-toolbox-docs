@@ -12,6 +12,7 @@
             reagent-toolbox-docs.components.input
             reagent-toolbox-docs.components.link
             reagent-toolbox-docs.components.navigation
+            reagent-toolbox-docs.components.progress-bar
             reagent-toolbox-docs.components.time-picker
             [reagent-toolbox-docs.db :as db]
             [reagent-toolbox-docs.routing :as routing]
