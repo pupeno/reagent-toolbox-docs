@@ -8,6 +8,7 @@
             reagent-toolbox-docs.components.avatar
             reagent-toolbox-docs.components.button
             reagent-toolbox-docs.components.checkbox
+            reagent-toolbox-docs.components.font-icon
             reagent-toolbox-docs.components.input
             reagent-toolbox-docs.components.link
             reagent-toolbox-docs.components.navigation
