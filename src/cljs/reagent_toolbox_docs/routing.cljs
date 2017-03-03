@@ -17,6 +17,7 @@
                           [:input [["input"]]]
                           [:link [["link"]]]
                           [:navigation [["navigation"]]]
+                          [:progress-bar [["progress-bar"]]]
                           [:time-picker [["time-picker"]]]]))
 
 (defn- sanitize-silk-keywords [matched-route]
