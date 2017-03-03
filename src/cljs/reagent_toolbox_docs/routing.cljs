@@ -18,6 +18,7 @@
                           [:link [["link"]]]
                           [:navigation [["navigation"]]]
                           [:progress-bar [["progress-bar"]]]
+                          [:radio-buttons [["radio-buttons"]]]
                           [:time-picker [["time-picker"]]]]))
 
 (defn- sanitize-silk-keywords [matched-route]
