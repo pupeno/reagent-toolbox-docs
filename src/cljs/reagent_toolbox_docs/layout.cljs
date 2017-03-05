@@ -48,6 +48,7 @@
                 ["Link" :link]
                 ["Navigation" :navigation]
                 ["Progress Bar" :progress-bar]
+                ["Slider" :slider]
                 ["Time Picker" :time-picker]])]]
         [:main.content ^{:key @current-route} [pages @current-route]]]
        [:footer
