@@ -4,17 +4,6 @@
   (:require [reagent-toolbox-docs.layout :as layout]
             [reagent-toolbox-docs.ui :as ui]))
 
-(defn dropdown-test
-  []
-  (let [countries [{:value 'EN-gb' :label 'England'}
-                   {:value 'ES-es' :label 'Spain'}
-                   {:value 'TH-th' :label 'Thailand'}
-                   {:value 'EN-en' :label 'USA'}]
-        state (reagent.ratom/atom {:value 'ES-es'})]
-    [reagent-toolbox.core/dropdown {:auto true
-                                    :on-change #(swap! state assoc :value %)
-                                    :source countries
-                                    :value (@state :value)}]))
 (defn view
   []
   (fn []
