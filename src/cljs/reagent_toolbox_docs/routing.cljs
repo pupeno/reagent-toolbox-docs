@@ -19,6 +19,7 @@
                           [:navigation [["navigation"]]]
                           [:progress-bar [["progress-bar"]]]
                           [:slider [["slider"]]]
+                          [:reagent-switch [["reagent-switch"]]]
                           [:time-picker [["time-picker"]]]]))
 
 (defn- sanitize-silk-keywords [matched-route]
