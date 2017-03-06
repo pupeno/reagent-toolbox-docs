@@ -13,6 +13,7 @@
                           [:avatar [["avatar"]]]
                           [:button [["button"]]]
                           [:checkbox [["checkbox"]]]
+                          [:drawer [["drawer"]]]
                           [:dropdown [["dropdown"]]]
                           [:font-icon [["font-icon"]]]
                           [:input [["input"]]]
