@@ -113,30 +113,31 @@
         [:tr
          [:th "Name"]
          [:th "Description"]]]
-       [:tr
-        [:td [:code "disabled"]]
-        [:td "Used for the root element if the component is disabled."]]
-       [:tr
-        [:td [:code "field"]]
-        [:td "Used for the root element if the component is not disabled."]]
-       [:tr
-        [:td [:code "input"]]
-        [:td "Used for the input element."]]
-       [:tr
-        [:td [:code "off"]]
-        [:td "Used for a wrapper around the thumb if checked is false."]]
-       [:tr
-        [:td [:code "on"]]
-        [:td "Used for a wrapper around the thumb if checked is true."]]
-       [:tr
-        [:td [:code "ripple"]]
-        [:td "Used for the ripple inside the switch."]]
-       [:tr
-        [:td [:code "text"]]
-        [:td "Used for the text label element."]]
-       [:tr
-        [:td [:code "thumb"]]
-        [:td "Used for the thumb element."]]]]]))
+       [:tbody
+        [:tr
+         [:td [:code "disabled"]]
+         [:td "Used for the root element if the component is disabled."]]
+        [:tr
+         [:td [:code "field"]]
+         [:td "Used for the root element if the component is not disabled."]]
+        [:tr
+         [:td [:code "input"]]
+         [:td "Used for the input element."]]
+        [:tr
+         [:td [:code "off"]]
+         [:td "Used for a wrapper around the thumb if checked is false."]]
+        [:tr
+         [:td [:code "on"]]
+         [:td "Used for a wrapper around the thumb if checked is true."]]
+        [:tr
+         [:td [:code "ripple"]]
+         [:td "Used for the ripple inside the switch."]]
+        [:tr
+         [:td [:code "text"]]
+         [:td "Used for the text label element."]]
+        [:tr
+         [:td [:code "thumb"]]
+         [:td "Used for the thumb element."]]]]]]))
 
 (defmethod layout/pages :slider [_]
   [view])
