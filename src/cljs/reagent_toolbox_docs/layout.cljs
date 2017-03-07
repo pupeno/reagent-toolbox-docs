@@ -51,6 +51,7 @@
                 ["Navigation" :navigation]
                 ["Progress Bar" :progress-bar]
                 ["Slider" :slider]
+                ["Snackbar" :snackbar]
                 ["Switch" :reagent-switch]
                 ["Time Picker" :time-picker]])]]
         [:main.content ^{:key @current-route} [pages @current-route]]]

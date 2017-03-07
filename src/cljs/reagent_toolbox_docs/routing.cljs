@@ -21,6 +21,7 @@
                           [:navigation [["navigation"]]]
                           [:progress-bar [["progress-bar"]]]
                           [:slider [["slider"]]]
+                          [:snackbar [["snackbar"]]]
                           [:reagent-switch [["reagent-switch"]]]
                           [:time-picker [["time-picker"]]]]))
 
