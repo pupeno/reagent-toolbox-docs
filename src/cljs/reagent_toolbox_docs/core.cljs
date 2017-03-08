@@ -17,6 +17,7 @@
             reagent-toolbox-docs.components.progress-bar
             reagent-toolbox-docs.components.slider
             reagent-toolbox-docs.components.reagent-switch
+            reagent-toolbox-docs.components.radio-buttons
             reagent-toolbox-docs.components.time-picker
             [reagent-toolbox-docs.db :as db]
             [reagent-toolbox-docs.routing :as routing]

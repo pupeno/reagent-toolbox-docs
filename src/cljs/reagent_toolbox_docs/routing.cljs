@@ -22,6 +22,7 @@
                           [:progress-bar [["progress-bar"]]]
                           [:slider [["slider"]]]
                           [:reagent-switch [["reagent-switch"]]]
+                          [:radio-buttons [["radio-buttons"]]]
                           [:time-picker [["time-picker"]]]]))
 
 (defn- sanitize-silk-keywords [matched-route]
