@@ -51,6 +51,7 @@
                 ["Navigation" :navigation]
                 ["Progress Bar" :progress-bar]
                 ["Slider" :slider]
+                ["Snackbar" :snackbar]
                 ["Switch" :reagent-switch]
                 ["Radio Buttons" :radio-buttons]
                 ["Time Picker" :time-picker]])]]
