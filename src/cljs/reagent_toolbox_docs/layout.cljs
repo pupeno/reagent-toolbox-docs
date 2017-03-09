@@ -54,6 +54,7 @@
                 ["Snackbar" :snackbar]
                 ["Switch" :reagent-switch]
                 ["Radio Buttons" :radio-buttons]
+                ["Tabs" :tabs]
                 ["Time Picker" :time-picker]])]]
         [:main.content ^{:key @current-route} [pages @current-route]]]
        [:footer

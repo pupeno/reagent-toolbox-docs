@@ -24,6 +24,7 @@
                           [:snackbar [["snackbar"]]]
                           [:reagent-switch [["reagent-switch"]]]
                           [:radio-buttons [["radio-buttons"]]]
+                          [:tabs [["tabs"]]]
                           [:time-picker [["time-picker"]]]]))
 
 (defn- sanitize-silk-keywords [matched-route]
