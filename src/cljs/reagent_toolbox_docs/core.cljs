@@ -15,10 +15,10 @@
             reagent-toolbox-docs.components.link
             reagent-toolbox-docs.components.navigation
             reagent-toolbox-docs.components.progress-bar
+            reagent-toolbox-docs.components.radio-buttons
+            reagent-toolbox-docs.components.reagent-switch
             reagent-toolbox-docs.components.slider
             reagent-toolbox-docs.components.snackbar
-            reagent-toolbox-docs.components.reagent-switch
-            reagent-toolbox-docs.components.radio-buttons
             reagent-toolbox-docs.components.tabs
             reagent-toolbox-docs.components.time-picker
             [reagent-toolbox-docs.db :as db]

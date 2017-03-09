@@ -20,10 +20,10 @@
                           [:link [["link"]]]
                           [:navigation [["navigation"]]]
                           [:progress-bar [["progress-bar"]]]
-                          [:slider [["slider"]]]
-                          [:snackbar [["snackbar"]]]
                           [:reagent-switch [["reagent-switch"]]]
                           [:radio-buttons [["radio-buttons"]]]
+                          [:slider [["slider"]]]
+                          [:snackbar [["snackbar"]]]
                           [:tabs [["tabs"]]]
                           [:time-picker [["time-picker"]]]]))
 
