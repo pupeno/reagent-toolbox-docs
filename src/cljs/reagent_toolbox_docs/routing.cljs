@@ -12,6 +12,7 @@
                           [:autocomplete [["autocomplete"]]]
                           [:avatar [["avatar"]]]
                           [:button [["button"]]]
+                          [:card [["card"]]]
                           [:checkbox [["checkbox"]]]
                           [:drawer [["drawer"]]]
                           [:dropdown [["dropdown"]]]
