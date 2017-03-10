@@ -43,6 +43,7 @@
                 ["Avatar" :avatar]
                 ["Button" :button]
                 ["Checkbox" :checkbox]
+                ["Card" :card]
                 ["Drawer" :drawer]
                 ["Dropdown" :dropdown]
                 ["Font Icon" :font-icon]
