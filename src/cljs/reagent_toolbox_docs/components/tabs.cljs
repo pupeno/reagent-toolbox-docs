@@ -112,36 +112,36 @@
           [:td [:code "on-change"]]
           [:td [:code "function"]]
           [:td]
-          [:td "Callback function that is fired when the tab changes."]]]]
-       [:section
-        [:h3 "Theming"]
-        [:table
-         [:thead
-          [:tr
-           [:th "Name"]
-           [:th "Description"]]]
-         [:tbody
-          [:tr
-           [:td [:code "active"]]
-           [:td "Added to the active tab content and header."]]
-          [:tr
-           [:td [:code "fixed"]]
-           [:td "Used to make the tabs \"fixed tabs\"."]]
-          [:tr
-           [:td [:code "inverse"]]
-           [:td "Used to invert the colors."]]
-          [:tr
-           [:td [:code "navigation"]]
-           [:td "Used for the navigation element."]]
-          [:tr
-           [:td [:code "pointer"]]
-           [:td "Used for the moving underline element."]]
-          [:tr
-           [:td [:code "tabs"]]
-           [:td "Used as a root classname for the component."]]
-          [:tr
-           [:td [:code "tab"]]
-           [:td "Used for the tab content element."]]]]]]]
+          [:td "Callback function that is fired when the tab changes."]]]]]
+      [:section
+       [:h3 "Theming"]
+       [:table
+        [:thead
+         [:tr
+          [:th "Name"]
+          [:th "Description"]]]
+        [:tbody
+         [:tr
+          [:td [:code "active"]]
+          [:td "Added to the active tab content and header."]]
+         [:tr
+          [:td [:code "fixed"]]
+          [:td "Used to make the tabs \"fixed tabs\"."]]
+         [:tr
+          [:td [:code "inverse"]]
+          [:td "Used to invert the colors."]]
+         [:tr
+          [:td [:code "navigation"]]
+          [:td "Used for the navigation element."]]
+         [:tr
+          [:td [:code "pointer"]]
+          [:td "Used for the moving underline element."]]
+         [:tr
+          [:td [:code "tabs"]]
+          [:td "Used as a root classname for the component."]]
+         [:tr
+          [:td [:code "tab"]]
+          [:td "Used for the tab content element."]]]]]]
      [:section
       [:h2 "Tab"]
       [:p "Represent a single tab element and it should include some properties to describe the tab itself and get children elements as content."]
