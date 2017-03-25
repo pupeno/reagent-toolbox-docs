@@ -16,18 +16,19 @@
      [ui/display-and-eval-code
       "(defn dropdown-test
          []
-         (let [countries [{:value \"EN-gb\" :label \"England\"}
-                          {:value \"ES-es\" :label \"Spain\"}
-                          {:value \"TH-th\" :label \"Thailand\"}
-                          {:value \"EN-en\" :label \"USA\"}]
-               state (reagent.ratom/atom {:value \"ES-es\"})]
+         (let [countries [{:value nil :label \"None\"}
+                          {:value :en :label \"English\"}
+                          {:value :es :label \"Spainish\"}
+                          {:value :eo :label \"Esperanto\"}
+                          {:value \"many\" :label \"Many languages\"}]
+               state (reagent.ratom/atom :es)]
            (fn []
              [:div
               [:p \"Value: \" (pr-str @state)]
               [reagent-toolbox.core/dropdown {:auto true
-                                              :on-change #(swap! state assoc :value %)
+                                              :on-change #(reset! state %)
                                               :source countries
-                                              :value (:value @state)}]])))
+                                              :value @state}]])))
 
        [dropdown-test]"]
 
