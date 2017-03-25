@@ -8,13 +8,10 @@
   (fn []
     [:article
      [:h1 "Font Icon"]
-     [:p " The font icon component is used to represent an icon from the "
-      [:a {:href "https://material.io/icons/"} "Google Material Design"]
-      " icon font. React Toolbox does not provide the font icon for you. You need to get the "
-      "icons using whatever method you want. We recommend to import the font and the associated "
-      "CSS from Google Fonts as is specified "
+     [:p " The font icon component is used to represent an icon from the " [:a {:href "https://material.io/icons/"} "Google Material Design"]
+      " icon font. React Toolbox does not provide the font icon for you. You need to get the icons using whatever "
+      "method you want. We recommend to import the font and the associated CSS from Google Fonts as is specified "
       [:a {:href "http://google.github.io/material-design-icons/#getting-icons"} "here"] "."]
-
      [ui/display-and-eval-code "
 (defn font-icon-test []
   (fn []
@@ -25,10 +22,8 @@
      [reagent-toolbox.core/font-icon \"star\"]]))
 
 [font-icon-test]"]
-
      [:section
       [:h2 "Properties"]
-
       [:table
        [:thead
         [:tr

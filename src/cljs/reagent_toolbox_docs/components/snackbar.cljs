@@ -8,10 +8,8 @@
   (fn []
     [:article
      [:h1 "Snackbar"]
-
-     [:p "Snackbars provide lightweight feedback about an operation by showing a brief "
-      "message at the bottom of the screen. Snackbars can contain an action."]
-
+     [:p "Snackbars provide lightweight feedback about an operation by showing a brief message at the bottom of the "
+      "screen. Snackbars can contain an action."]
      [ui/display-and-eval-code "
 (defn snackbar-test []
   (let [snackbar (reagent.ratom/atom {:active false})]

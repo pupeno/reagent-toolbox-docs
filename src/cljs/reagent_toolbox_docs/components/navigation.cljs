@@ -8,8 +8,8 @@
   (fn []
     [:article
      [:h1 "Navigation"]
-     [:p "This component is intended to be a common wrapper for a group of links or buttons. "
-      "It sets a minimal layout, semantic markup and spacing for each of those elements."]
+     [:p "This component is intended to be a common wrapper for a group of links or buttons. It sets a minimal "
+      "layout, semantic markup and spacing for each of those elements."]
 
      [ui/display-and-eval-code "
 (defn navigation-test []
@@ -32,12 +32,9 @@
        [reagent-toolbox.core/navigation {:routes routes}]])))
 
 [navigation-test]"]
-
      [:p "If you want to provide a theme via context, the component key " [:code "RTCheckbox"] "."]
-
      [:section
       [:h2 "Properties"]
-
       [:table
        [:thead
         [:tr
@@ -68,10 +65,8 @@
          [:td [:code "String"]]
          [:td [:code "horizontal"]]
          [:td "Type of the navigation, it can be vertical or horizontal."]]]]]
-
      [:section
       [:h2 "Theme"]
-
       [:table
        [:thead
         [:tr

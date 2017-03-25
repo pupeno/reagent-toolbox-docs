@@ -144,7 +144,8 @@
           [:td "Used for the tab content element."]]]]]]
      [:section
       [:h2 "Tab"]
-      [:p "Represent a single tab element and it should include some properties to describe the tab itself and get children elements as content."]
+      [:p "Represent a single tab element and it should include some properties to describe the tab itself and get "
+       "children elements as content."]
       [:section
        [:h3 "Properties"]
        [:table

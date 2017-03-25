@@ -8,16 +8,12 @@
   (fn []
     [:article
      [:h1 "Radio Buttons"]
-
      [:p
       [:a {:href "https://material.google.com/components/selection-controls.html#selection-controls-radio-button"} "Radio buttons"]
-      " allow the user to select one option from a set. Use radio buttons for exclusive "
-      "selection if you think that the user needs to see all available options side-by-side. "
-      "Otherwise, consider a dropdown, which uses less space than displaying all options. They "
-      "should always be used along with RadioGroup."]
-
+      " allow the user to select one option from a set. Use radio buttons for exclusive selection if you think that "
+      "the user needs to see all available options side-by-side. Otherwise, consider a dropdown, which uses less space "
+      "than displaying all options. They should always be used along with RadioGroup."]
      [:p "You can provide the theme for this component using the key ToolboxButton."]
-
      [ui/display-and-eval-code "
 (defn radio-buttons-test []
   (let [radio-value (reagent.ratom/atom {:value \"vvendetta\"})
@@ -48,14 +44,11 @@
 
      [:section
       [:h1 "Radio Group"]
-
       [:p "A radio selector is mean to get a value from a set of choices, that 's why a radio "
        "group is needed. It can take some properties and actions that will be transferred to "
        "the children, but they also can behave independently."]]
-
      [:section
       [:h2 "Properties"]
-
       [:table
        [:thead
         [:tr
@@ -88,16 +81,12 @@
         [:td [:code "any"]]
         [:td]
         [:td "Default value selected in the radio group."]]]]
-
      [:section
       [:h1 "Radio Button"]
-
-      [:p "The inner component to compose radio selectors. They will be rendered as radio input "
-       "elements of HTML transferring the given properties that concerns to them."]]
-
+      [:p "The inner component to compose radio selectors. They will be rendered as radio input elements of HTML "
+       "transferring the given properties that concerns to them."]]
      [:section
       [:h2 "Properties"]
-
       [:table
        [:thead
         [:tr
@@ -109,8 +98,7 @@
         [:td [:code "checked"]]
         [:td [:code "boolean"]]
         [:td [:code "false"]]
-        [:td "If true, the input element will be selected by default. Transferred from the "
-         "parent."]]
+        [:td "If true, the input element will be selected by default. Transferred from the parent."]]
        [:tr
         [:td [:code "class-name"]]
         [:td [:code "string"]]
@@ -151,10 +139,8 @@
         [:td [:code "any"]]
         [:td]
         [:td "Value for the radio button."]]]]
-
      [:section
       [:h2 "Theming"]
-
       [:table
        [:thead
         [:tr

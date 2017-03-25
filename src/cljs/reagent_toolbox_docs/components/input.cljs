@@ -9,8 +9,8 @@
     [:article
      [:h1 "Input"]
      [:p "Although we are calling them Inputs they actually correspond to Material Design "
-      [:a {:href "https://material.io/guidelines/components/text-fields.html"} "Text fields"]
-      ". It allows a user to input text and it's the base for other components like the autocomplete."]
+      [:a {:href "https://material.io/guidelines/components/text-fields.html"} "Text fields"] ". It allows a user to "
+      "input text and it's the base for other components like the autocomplete."]
      [ui/display-and-eval-code "
 (defn input-test []
   (let [name (reagent.ratom/atom \"\")
@@ -50,14 +50,12 @@
                                     :max-length 20
                                     :on-change  (fn [value event] (reset! multiline value))}]
 
-
        [:p \"Value: \" (pr-str @email)]
        [reagent-toolbox.core/input {:label     \"Email address\"
                                     :type      \"email\"
                                     :value     @email
                                     :icon      \"email\"
                                     :on-change (fn [value event] (reset! email value))}]
-
 
        [:p \"Value: \" (pr-str @phone)]
        [reagent-toolbox.core/input {:label     \"Phone\"
@@ -143,7 +141,8 @@
          [:td [:code "multiline"]]
          [:td [:code "boolean"]]
          [:td [:code "false"]]
-         [:td "If true, a textarea element will be rendered. The textarea also grows and shrinks according to the number of lines."]]
+         [:td "If true, a textarea element will be rendered. The textarea also grows and shrinks according to the "
+          "number of lines."]]
         [:tr
          [:td [:code "rows"]]
          [:td [:code "number"]]

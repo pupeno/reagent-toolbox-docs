@@ -8,12 +8,9 @@
   (fn []
     [:article
      [:h1 "Switch"]
-
-     [:p "On/off switches toggle the state of a single settings option. The option that the "
-      "switch controls, as well as the state it's in, should be made clear from the "
-      "corresponding inline label. Switches take on the same visual properties of the radio "
-      "button."]
-
+     [:p "On/off switches toggle the state of a single settings option. The option that the switch controls, as well "
+      "as the state it's in, should be made clear from the corresponding inline label. Switches take on the same "
+      "visual properties of the radio button."]
      [ui/display-and-eval-code "
 (defn switch-test []
   (let [flip (fn [a k] (swap! a update k not))
@@ -32,13 +29,10 @@
                                      :on-change #(flip switches :switch3)}]])))
 
 [switch-test]"]
-
      [:p "This component can be styled by context providing a theme with the key " [:code "RTSwitch"] "through the "
       "theme provider."]
-
      [:section
       [:h2 "Properties"]
-
       [:table
        [:thead
         [:tr
@@ -87,10 +81,8 @@
          [:td [:code "function"]]
          [:td]
          [:td "Callback function that is fired when the switch is focused."]]]]]
-
      [:section
       [:h2 "Theme"]
-
       [:table
        [:thead
         [:tr

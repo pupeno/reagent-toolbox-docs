@@ -8,10 +8,8 @@
   (fn []
     [:article
      [:h1 "Link"]
-     [:p "The link is a very simple component that acts mostly as a wrapper for the HTML anchor. "
-      "It's not included in Material Design Specification but we provide it as an easy way to "
-      "create links with icons and counters."]
-
+     [:p "The link is a very simple component that acts mostly as a wrapper for the HTML anchor. It's not included in "
+      "Material Design Specification but we provide it as an easy way to create links with icons and counters."]
      [ui/display-and-eval-code "
 (defn link-text []
   (fn []
@@ -30,12 +28,10 @@
 [link-text]"]
 
      [:p "If you want to provide a theme via context, the component key is " [:code "RTLink"] "."]
-
      [:section
       [:h2 "Properties"]
-      [:p "You can add as many properties as you want to be directly transferred to the output "
-       "anchor element. Apart from them you have the following properties:"]
-
+      [:p "You can add as many properties as you want to be directly transferred to the output anchor element. Apart "
+       "from them you have the following properties:"]
       [:table
        [:thead
         [:tr
@@ -69,10 +65,8 @@
          [:td [:code "string"]]
          [:td]
          [:td "The text string used for the text content of the link."]]]]]
-
      [:section
       [:h2 "Theme"]
-
       [:table
        [:thead
         [:tr

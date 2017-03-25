@@ -8,10 +8,8 @@
   (fn []
     [:article
      [:h1 "Dropdown"]
-     [:p "The Dropdown selects an option between multiple selections. The element displays "
-      "the current state and a down arrow. When it is clicked, it displays the list of "
-      "available options."]
-
+     [:p "The Dropdown selects an option between multiple selections. The element displays the current state and a "
+      "down arrow. When it is clicked, it displays the list of available options."]
      [ui/display-and-eval-code "
 (defn dropdown-test []
   (let [countries [{:value nil :label \"None\"}
@@ -29,12 +27,9 @@
                                        :value     @state}]])))
 
 [dropdown-test]"]
-
      [:p "If you want to provide a theme via context, the component key is " [:code "RTDropdown"] "."]
-
      [:section
       [:h2 "Properties"]
-
       [:table
        [:thead
         [:tr
@@ -110,15 +105,12 @@
          [:td [:code "boolean"]]
          [:td [:code "false"]]
          [:td "If true, the dropdown has a required attribute."]]]]
-
       [:section
        [:h2 "Theme"]
-
-       [:p "This component uses an Input under the covers. The theme object is passed down "
-        "namespaced under input keyword. This means you can use the same theme classNames "
-        "from Input component but namespaced with input. For example, to style the label you "
+       [:p "This component uses an Input under the covers. The theme object is passed down namespaced under input "
+        "keyword. This means you can use the same theme classNames from Input component but namespaced with input. For "
+        "example, to style the label you "
         "have to use inputLabel className."]
-
        [:table
         [:thead
          [:tr

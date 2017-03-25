@@ -9,10 +9,8 @@
     [:article
      [:h1 "Drawer"]
      [:p "The "
-      [:a {:href "https://material.google.com/patterns/navigation-drawer.html"}
-       "navigation drawer"]
-      " slides in from the left. It is a common pattern found in Google apps and follows the "
-      "keylines and metrics for lists."]
+      [:a {:href "https://material.google.com/patterns/navigation-drawer.html"} "navigation drawer"] " slides in from "
+      "the left. It is a common pattern found in Google apps and follows the keylines and metrics for lists."]
 
      [ui/display-and-eval-code "
 (defn drawer-test []

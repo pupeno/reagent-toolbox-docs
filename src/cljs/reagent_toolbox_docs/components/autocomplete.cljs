@@ -8,7 +8,9 @@
   (fn []
     [:article
      [:h1 "Autocomplete"]
-     [:p "An input field with a set of predeterminated labeled values. When it's focused it shows a list of options that are filtered by label as the user types. They can be simple or multiple depending on the amount of values that can be selected. The opening direction is determined by its current position at opening time."]
+     [:p "An input field with a set of predeterminated labeled values. When it's focused it shows a list of options "
+      "that are filtered by label as the user types. They can be simple or multiple depending on the amount of values "
+      "that can be selected. The opening direction is determined by its current position at opening time."]
      [ui/display-and-eval-code "
 (defn autocomplete-test []
   (let [single-value (reagent.ratom/atom \"\")
