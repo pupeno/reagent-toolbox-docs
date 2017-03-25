@@ -16,29 +16,22 @@
      [:p "You can provide the theme for this component using the key ToolboxButton."]
      [ui/display-and-eval-code "
 (defn radio-buttons-test []
-  (let [radio-value (reagent.ratom/atom {:value \"vvendetta\"})
-        target-value (fn [t] (.. t -target -value))
-        select (fn [sel] (swap! radio-value assoc :value (target-value sel)))]
+  (let [value (reagent.ratom/atom \"vvendetta\")]
     (fn []
       [:div
-       [:p \"Value: \" @radio-value]
+       [:p \"Value: \" (pr-str @value)]
        [reagent-toolbox.core/radio-group {:name  \"comic\"
-                                          :value (:value @radio-value)}
+                                          :value @value
+                                          :on-change #(reset! value %)}
         [reagent-toolbox.core/radio-button {:label     \"The Walking Dead\"
-                                            :value     \"thewalkingdead\"
-                                            :checked   (when (= (:value @radio-value) \"thewalkingdead\") true)
-                                            :on-change #(select %)}]
+                                            :value     :thewalkingdead}]
         [reagent-toolbox.core/radio-button {:label    \"From Hell\"
                                             :value    \"fromhell\"
                                             :disabled true}]
         [reagent-toolbox.core/radio-button {:label     \"V for Vendetta\"
-                                            :value     \"vvendetta\"
-                                            :checked   (when (= (:value @radio-value) \"vvendetta\") true)
-                                            :on-change #(select %)}]
+                                            :value     \"vvendetta\"}]
         [reagent-toolbox.core/radio-button {:label     \"Watchmen\"
-                                            :value     \"watchmen\"
-                                            :checked   (when (= (:value @radio-value) \"watchmen\") true)
-                                            :on-change #(select %)}]]])))
+                                            :value     \"watchmen\"}]]])))
 
 [radio-buttons-test]"]
      [:section
