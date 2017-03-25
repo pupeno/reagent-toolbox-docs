@@ -18,10 +18,9 @@
      [ui/display-and-eval-code
       "(defn drawer-test
          []
-         (let [state (reagent.ratom/atom {:active true})]
+         (let [state (reagent.ratom/atom {:active false})]
            (fn []
              [:div
-              [:p (pr-str @state)]
               [reagent-toolbox.core/button {:label \"Show Drawer\"
                                             :raised true
                                             :accent true
