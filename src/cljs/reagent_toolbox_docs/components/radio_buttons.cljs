@@ -4,8 +4,7 @@
   (:require [reagent-toolbox-docs.layout :as layout]
             [reagent-toolbox-docs.ui :as ui]))
 
-(defn view
-  []
+(defn view []
   (fn []
     [:article
      [:h1 "Radio Buttons"]

@@ -4,8 +4,7 @@
   (:require [reagent-toolbox-docs.layout :as layout]
             [reagent-toolbox-docs.ui :as ui]))
 
-(defn view
-  []
+(defn view []
   (fn []
     [:article
      [:h1 "Progress Bar"]
@@ -41,12 +40,9 @@
                                            :disabled true}]])))
 
 [progress-bar-test]"]
-
      [:p "If you want to provide a theme via context, the component key is " [:code "RTProgressBar"] "."]
-
      [:section
       [:h2 "Properties"]
-
       [:table
        [:thead
         [:tr
@@ -101,10 +97,8 @@
          [:td [:code "0"]]
          [:td "Value of the current progress."]]
         ]]]
-
      [:section
       [:h2 "Theme"]
-
       [:table
        [:thead
         [:tr

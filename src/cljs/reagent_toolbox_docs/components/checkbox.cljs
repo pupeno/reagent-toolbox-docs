@@ -4,8 +4,7 @@
   (:require [reagent-toolbox-docs.ui :as ui]
             [reagent-toolbox-docs.layout :as layout]))
 
-(defn view
-  []
+(defn view []
   (fn []
     [:article
      [:h1 "Checkbox"]
