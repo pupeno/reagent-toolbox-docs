@@ -58,7 +58,7 @@
         [:tr
          [:td [:code "class-name"]]
          [:td [:code "string"]]
-         [:td [:code "''"]]
+         [:td [:code "\"\""]]
          [:td "Sets a class to give customized styles to the checkbox field."]]
         [:tr
          [:td [:code "disabled"]]
@@ -67,7 +67,7 @@
          [:td "If true, the checkbox shown as disabled and cannot be modified."]]
         [:tr
          [:td [:code "label"]]
-         [:td [:code "string of node"]]
+         [:td [:code "string"] " or reagent component"]
          [:td]
          [:td "Text label to attach next to the checkbox element."]]
         [:tr

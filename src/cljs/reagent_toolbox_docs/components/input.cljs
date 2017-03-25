@@ -111,7 +111,7 @@
          [:td "If true, component will be disabled."]]
         [:tr
          [:td [:code "error"]]
-         [:td [:code "string"] " or Reagent component"]
+         [:td [:code "string"] " or reagent component"]
          [:td]
          [:td "Give an error node to display under the field."]]
         [:tr
@@ -121,17 +121,17 @@
          [:td "Indicates if the label is floating in the input field or not."]]
         [:tr
          [:td [:code "hint"]]
-         [:td [:code "string"] " or Reagent component"]
+         [:td [:code "string"] " or reagent component"]
          [:td [:code "\"\""]]
          [:td "The text string to use for hint text element."]]
         [:tr
          [:td [:code "icon"]]
-         [:td [:code "string"] " or Reagent component"]
+         [:td [:code "string"] " or reagent component"]
          [:td]
          [:td "Name of an icon to use as a label for the input."]]
         [:tr
          [:td [:code "label"]]
-         [:td [:code "string"] " or Reagent component"]
+         [:td [:code "string"] " or reagent component"]
          [:td]
          [:td "The text string to use for the floating label element."]]
         [:tr

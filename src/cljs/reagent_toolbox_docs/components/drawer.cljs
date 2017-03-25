@@ -58,7 +58,7 @@
         [:tr
          [:td [:code "class-name"]]
          [:td [:code "string"]]
-         [:td [:code "''"]]
+         [:td [:code "\"\""]]
          [:td "Sets a class to give customized styles to the drawer."]]
         [:tr
          [:td [:code "on-overlay-click"]]

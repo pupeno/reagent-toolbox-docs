@@ -68,7 +68,7 @@
        [:tr
         [:td [:code "class-name"]]
         [:td [:code "string"]]
-        [:td [:code "''"]]
+        [:td [:code "\"\""]]
         [:td "Set a class to give custom styles to the group."]]
        [:tr
         [:td [:code "disabled"]]
@@ -116,7 +116,7 @@
        [:tr
         [:td [:code "class-name"]]
         [:td [:code "string"]]
-        [:td [:code "''"]]
+        [:td [:code "\"\""]]
         [:td "Set a class to give custom styles to the radio button."]]
        [:tr
         [:td [:code "disabled"]]
@@ -125,8 +125,8 @@
         [:td "If true, the item will be displayed as disabled."]]
        [:tr
         [:td [:code "label"]]
-        [:td [:code "string or node"]]
-        [:td [:code "''"]]
+        [:td [:code "string"] "or reagent component"]
+        [:td [:code "\"\""]]
         [:td "Label for the radio button."]]
        [:tr
         [:td [:code "name"]]

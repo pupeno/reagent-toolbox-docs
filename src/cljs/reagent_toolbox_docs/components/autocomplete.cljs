@@ -68,7 +68,7 @@
          [:td "If true, component will be disabled."]]
         [:tr
          [:td [:code "error"]]
-         [:td [:code "string"] " or " "Reagent component"]
+         [:td [:code "string"] " or reagent component"]
          [:td]
          [:td "Sets the error string for the internal input element."]]
         [:tr
@@ -78,7 +78,7 @@
          [:td "Whether component should keep focus after value change."]]
         [:tr
          [:td [:code "label"]]
-         [:td [:code "string"] " or " "Reagent component"]
+         [:td [:code "string"] " or reagent component"]
          [:td]
          [:td "The text string to use for the floating label element."]]
         [:tr

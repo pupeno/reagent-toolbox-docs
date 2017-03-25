@@ -47,11 +47,11 @@
         [:tr
          [:td [:code "class-name"]]
          [:td [:code "string"]]
-         [:td [:code "''"]]
+         [:td [:code "\"\""]]
          [:td "The class name to give custom styles such as sizing."]]
         [:tr
          [:td [:code "value"]]
-         [:td [:code "string or element"]]
+         [:td [:code "string"] " or reagent component"]
          [:td]
          [:td "The key string for the icon you want be displayed."]]]]]]))
 

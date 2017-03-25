@@ -37,7 +37,7 @@
       [:tbody
        [:tr
         [:td [:code "children"]]
-        [:td "Reagent component"]
+        [:td "reagent component"]
         [:td]
         [:td "Children for the avatar. You can pass an SVG for a custom icon or, for example, an image."]]
        [:tr
@@ -52,12 +52,12 @@
         [:td "Set to true if your image is not squared so it will be used as a cover for the element."]]
        [:tr
         [:td [:code "icon"]]
-        [:td [:code "string"] " or Reagent component"]
+        [:td [:code "string"] " or reagent component"]
         [:td]
         [:td "A key to identify an Icon from Material Design Icons or a custom Icon Element."]]
        [:tr
         [:td [:code "image"]]
-        [:td [:code "string"] " or Reagent component"]
+        [:td [:code "string"] " or reagent component"]
         [:td]
         [:td "An image source or an image element."]]
        [:tr

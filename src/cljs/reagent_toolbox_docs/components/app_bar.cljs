@@ -47,9 +47,7 @@
          [:td [:code "fixed"]]
          [:td [:code "boolean"]]
          [:td [:code "false"]]
-         [:td "Determine if the bar should have position "
-          [:code "fixed"] " or "
-          [:code "relative"] "."]]
+         [:td "Determine if the bar should have position " [:code "fixed"] " or " [:code "relative"] "."]]
         [:tr
          [:td [:code "flat"]]
          [:td [:code "boolean"]]
@@ -67,22 +65,22 @@
          [:td "Title used for the app-bar."]]
         [:tr
          [:td [:code "left-icon"]]
-         [:td [:code "string or element"]]
+         [:td [:code "string"] " or reagent component"]
          [:td [:code "nil"]]
          [:td "Left icon."]]
         [:tr
          [:td [:code "on-left-icon-click"]]
-         [:td [:code "Function"]]
+         [:td [:code "function"]]
          [:td [:code "nil"]]
          [:td "Called on left icon click event."]]
         [:tr
          [:td [:code "right-icon"]]
-         [:td [:code "string or element"]]
+         [:td [:code "string"] " or reagent component"]
          [:td [:code "nil"]]
          [:td "Right icon."]]
         [:tr
          [:td [:code "on-right-icon-click"]]
-         [:td [:code "Function"]]
+         [:td [:code "function"]]
          [:td [:code "nil"]]
          [:td "Called on right icon click event."]]
         [:tr

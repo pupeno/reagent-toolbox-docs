@@ -57,7 +57,7 @@
         [:tr
          [:td [:code "class-name"]]
          [:td [:code "string"]]
-         [:td [:code "''"]]
+         [:td [:code "\"\""]]
          [:td "Sets a class to give custom styles to the switch."]]
         [:tr
          [:td [:code "disabled"]]

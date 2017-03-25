@@ -48,7 +48,7 @@
         [:tr
          [:td [:code "class-name"]]
          [:td [:code "string"]]
-         [:td [:code "''"]]
+         [:td [:code "\"\""]]
          [:td "Additional class name to provide custom styling."]]
         [:tr
          [:td [:code "disabled"]]

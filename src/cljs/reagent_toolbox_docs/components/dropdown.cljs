@@ -60,7 +60,7 @@
         [:tr
          [:td [:code "class-name"]]
          [:td [:code "string"]]
-         [:td [:code "''"]]
+         [:td [:code "\"\""]]
          [:td "Set the class to give custom styles to the dropdown."]]
         [:tr
          [:td [:code "disabled"]]

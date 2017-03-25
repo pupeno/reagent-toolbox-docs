@@ -54,7 +54,7 @@
         [:tr
          [:td [:code "class-name"]]
          [:td [:code "string"]]
-         [:td [:code "''"]]
+         [:td [:code "\"\""]]
          [:td "Sets a custom class name to add styles to the link."]]
         [:tr
          [:td [:code "count"]]
@@ -63,7 +63,7 @@
          [:td "Sets a count number."]]
         [:tr
          [:td [:code "icon"]]
-         [:td [:code "string or element"]]
+         [:td [:code "string"] " or reagent component"]
          [:td]
          [:td "An icon key string to include a font-icon component in front of the text."]]
         [:tr

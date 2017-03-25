@@ -95,7 +95,7 @@
          [:td "Creates a link for the button."]]
         [:tr
          [:td [:code "icon"]]
-         [:td [:code "string"] " or Reagent component"]
+         [:td [:code "string"] " or reagent component"]
          [:td]
          [:td "Value of the icon (See Font Icon Component)."]]
         [:tr
