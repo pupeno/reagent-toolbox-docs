@@ -1,6 +1,6 @@
 ;;;; Copyright © 2017 Flexpoint Tech Ltd
 
-(ns reagent-toolbox-docs.components.reagent-switch
+(ns reagent-toolbox-docs.components.switch-                 ; Namespaces cannot be named the same as JavaScript reserved keywords.
   (:require [reagent-toolbox-docs.layout :as layout]
             [reagent-toolbox-docs.ui :as ui]))
 
@@ -114,5 +114,5 @@
          [:td [:code "thumb"]]
          [:td "Used for the thumb element."]]]]]]))
 
-(defmethod layout/pages :reagent-switch [_]
+(defmethod layout/pages :switch [_]
   [view])

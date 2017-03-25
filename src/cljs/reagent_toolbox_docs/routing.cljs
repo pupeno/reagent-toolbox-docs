@@ -21,7 +21,7 @@
                           [:link [["link"]]]
                           [:navigation [["navigation"]]]
                           [:progress-bar [["progress-bar"]]]
-                          [:reagent-switch [["reagent-switch"]]]
+                          [:switch [["reagent-switch"]]]
                           [:radio-buttons [["radio-buttons"]]]
                           [:slider [["slider"]]]
                           [:snackbar [["snackbar"]]]
