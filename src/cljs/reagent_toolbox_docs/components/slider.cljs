@@ -16,32 +16,39 @@
       "levels, such as volume, brightness, or color saturation."]
      [ui/display-and-eval-code "
 (defn slider-test []
-  (let [sliders (reagent.ratom/atom {:slider2 5 :slider3 1 :slider4 3})]
+  (let [slider-1 (reagent.ratom/atom nil)
+        slider-2 (reagent.ratom/atom 5)
+        slider-3 (reagent.ratom/atom 1)
+        slider-4 (reagent.ratom/atom 3)]
     (fn []
       [:section
-       [:p \"Value: \" (pr-str @sliders)]
        [:p \"Normal slider\"]
-       [reagent-toolbox.core/slider {:value     (@sliders :slider1)
-                                     :on-change #(swap! sliders assoc :slider1 %)}]
+       [:p \"Value: \" @slider-1]
+       [reagent-toolbox.core/slider {:value     @slider-1
+                                     :on-change #(reset! slider-1 %)}]
        [:p \"With steps, initial value, and editable\"]
-       [reagent-toolbox.core/slider {:value     (@sliders :slider2)
+       [:p \"Value: \" @slider-2]
+       [reagent-toolbox.core/slider {:value     @slider-2
                                      :min       0
                                      :max       10
                                      :editable  true
-                                     :on-change #(swap! sliders assoc :slider2 %)}]
+                                     :on-change #(reset! slider-2 %)}]
        [:p \"Pinned and with snaps\"]
-       [reagent-toolbox.core/slider {:value     (@sliders :slider3)
+       [:p \"Value: \" @slider-3]
+       [reagent-toolbox.core/slider {:value     @slider-3
                                      :editable  true
                                      :pinned    true
                                      :snaps     true
                                      :min       0
                                      :max       10
                                      :step      1
-                                     :on-change #(swap! sliders assoc :slider3 %)}]
+                                     :on-change #(reset! slider-3 %)}]
        [:p \"Disabled\"]
-       [reagent-toolbox.core/slider {:value     (@sliders :slider4)
+       [:p \"Value: \" @slider-4]
+       [reagent-toolbox.core/slider {:value     @slider-4
                                      :disabled  true
-                                     :on-change #(swap! sliders assoc :slider4 %)}]])))
+                                     :on-change #(reset! slider-4 %)}]])))
+
 [slider-test]"]
 
      [:p "This component can be styled by context providing a theme with the key " [:code "RTSwitch"] "through the "
@@ -95,7 +102,7 @@
          [:td [:code "on-focus"]]
          [:td [:code "function"]]
          [:td]
-         [:td "Callback function that is fired when the switch is focused."]]        ]]]
+         [:td "Callback function that is fired when the switch is focused."]]]]]
      [:section
       [:h2 "Theme"]
       [:table
