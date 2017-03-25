@@ -11,7 +11,6 @@
      [:p "The "
       [:a {:href "https://material.google.com/patterns/navigation-drawer.html"} "navigation drawer"] " slides in from "
       "the left. It is a common pattern found in Google apps and follows the keylines and metrics for lists."]
-
      [ui/display-and-eval-code "
 (defn drawer-test []
   (let [state (reagent.ratom/atom {:active false})]
@@ -29,10 +28,8 @@
 [drawer-test]"]
 
      [:p "If you want to provide a theme via context, the component key is " [:code "RTDrawer"] "."]
-
      [:section
       [:h2 "Properties"]
-
       [:table
        [:thead
         [:tr
@@ -67,10 +64,8 @@
          [:td [:code "left"]]
          [:td "Type of drawer. It can be left or right to display the drawer on the left or "
           "right side of the screen."]]]]]
-
      [:section
       [:h2 "Theme"]
-
       [:table
        [:thead
         [:tr

@@ -13,7 +13,6 @@
       " allow the user to select multiple options from a set. If you have multiple options appearing in a list, you "
       "can preserve space by using checkboxes instead of on/off switches. If you have a single option, avoid using a "
       "checkbox and use an on/off switch instead."]
-
      [ui/display-and-eval-code "
 (defn checkbox-test []
   (let [checkboxes (reagent.ratom/atom {:box1 true :box2 false})]
@@ -29,12 +28,9 @@
                                        :label    \"Disabled checkbox\"}]])))
 
 [checkbox-test]"]
-
      [:p "If you want to provide a theme via context, the component key " [:code "RTCheckbox"] "."]
-
      [:section
       [:h2 "Properties"]
-
       [:table
        [:thead
         [:tr
@@ -88,10 +84,8 @@
          [:td [:code "function"]]
          [:td]
          [:td "Callback called when the checkbox is focused."]]]]]
-
      [:section
       [:h2 "Theme"]
-
       [:table
        [:thead
         [:tr

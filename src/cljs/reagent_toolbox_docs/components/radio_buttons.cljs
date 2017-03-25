@@ -35,12 +35,12 @@
 
 [radio-buttons-test]"]
      [:section
-      [:h1 "Radio Group"]
+      [:h2 "Radio Group"]
       [:p "A radio selector is mean to get a value from a set of choices, that 's why a radio "
        "group is needed. It can take some properties and actions that will be transferred to "
        "the children, but they also can behave independently."]
       [:section
-       [:h2 "Properties"]
+       [:h3 "Properties"]
        [:table
         [:thead
          [:tr
@@ -75,11 +75,11 @@
           [:td]
           [:td "Default value selected in the radio group."]]]]]]
      [:section
-      [:h1 "Radio Button"]
+      [:h2 "Radio Button"]
       [:p "The inner component to compose radio selectors. They will be rendered as radio input elements of HTML "
        "transferring the given properties that concerns to them."]
       [:section
-       [:h2 "Properties"]
+       [:h3 "Properties"]
        [:table
         [:thead
          [:tr
@@ -134,7 +134,7 @@
           [:td]
           [:td "Value for the radio button."]]]]]
       [:section
-       [:h2 "Theming"]
+       [:h3 "Theming"]
        [:table
         [:thead
          [:tr
