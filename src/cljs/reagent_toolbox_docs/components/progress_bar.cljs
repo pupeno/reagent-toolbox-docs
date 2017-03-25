@@ -15,14 +15,30 @@
 
      [ui/display-and-eval-code "
 (defn progress-bar-test []
-  (fn []
-    [:div
-     [reagent-toolbox.core/progress-bar {:type \"circular\"
-                                         :mode \"indeterminate\"}]
-     [reagent-toolbox.core/progress-bar {:type   \"linear\"
-                                         :mode   \"determinate\"
-                                         :value  83
-                                         :buffer 90}]]))
+  (let [value (reagent.ratom/atom 20)
+        buffer (reagent.ratom/atom 40)]
+    (fn []
+      (js/setInterval (fn []
+                        (reset! value (rand-int 100))
+                        (reset! buffer (+ @value (rand-int (- 100 @value)))))
+                     2000)
+      [:div
+       [:p \"Determinate\"]
+       [reagent-toolbox.core/progress-bar {:mode   \"determinate\"
+                                           :value  @value
+                                           :buffer @buffer}]
+       [:p \"Indeterminate\"]
+       [reagent-toolbox.core/progress-bar {:mode \"indeterminate\"}]
+       [:p \"Circular\"]
+       [reagent-toolbox.core/progress-bar {:type       \"circular\"
+                                           :mode       \"indeterminate\"
+                                           :multicolor true}]
+       [:p \"Disabled\"]
+       [reagent-toolbox.core/progress-bar {:type     \"linear\"
+                                           :mode     \"determinate\"
+                                           :value    83
+                                           :buffer   90
+                                           :disabled true}]])))
 
 [progress-bar-test]"]
 
