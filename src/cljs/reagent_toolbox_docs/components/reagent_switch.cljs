@@ -17,20 +17,20 @@
 
      [ui/display-and-eval-code "
 (defn switch-test []
-  (letfn [(flip [a k] (swap! a update k not))]
-    (let [switches (reagent.ratom/atom {:switch1 true :switch2 false :switch3 true})]
-      (fn []
-        [:section
-         [reagent-toolbox.core/switch {:checked (@switches :switch1)
-                                       :label \"Push notifications\"
-                                       :on-change #(flip switches :switch1)}]
-         [reagent-toolbox.core/switch {:checked (@switches :switch2)
-                                       :label \"Mail notifications\"
-                                       :on-change #(flip switches :switch2)}]
-         [reagent-toolbox.core/switch {:checked (@switches :switch3)
-                                       :disabled true
-                                       :label \"Nothing, thanks\"
-                                       :on-change #(flip switches :switch3)}]]))))
+  (let [flip (fn [a k] (swap! a update k not))
+        switches (reagent.ratom/atom {:switch1 true :switch2 false :switch3 true})]
+    (fn []
+      [:section
+       [reagent-toolbox.core/switch {:checked (@switches :switch1)
+                                     :label \"Push notifications\"
+                                     :on-change #(flip switches :switch1)}]
+       [reagent-toolbox.core/switch {:checked (@switches :switch2)
+                                     :label \"Mail notifications\"
+                                     :on-change #(flip switches :switch2)}]
+       [reagent-toolbox.core/switch {:checked (@switches :switch3)
+                                     :disabled true
+                                     :label \"Nothing, thanks\"
+                                     :on-change #(flip switches :switch3)}]])))
 
 [switch-test]"]
 

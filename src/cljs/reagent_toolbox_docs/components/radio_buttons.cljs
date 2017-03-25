@@ -21,29 +21,29 @@
 
      [ui/display-and-eval-code "
 (defn radio-buttons-test []
-  (let [radio-value (reagent.ratom/atom {:value \"vvendetta\"})]
-    (letfn [(target-value [t] (.. t -target -value))
-            (select [sel] (swap! radio-value assoc :value (target-value sel)))]
-      (fn []
-        [:div
-         [:p \"Value: \" @radio-value]
-         [reagent-toolbox.core/radio-group {:name  \"comic\"
-                                            :value (:value @radio-value)}
-          [reagent-toolbox.core/radio-button {:label     \"The Walking Dead\"
-                                              :value     \"thewalkingdead\"
-                                              :checked   (when (= (:value @radio-value) \"thewalkingdead\") true)
-                                              :on-change #(select %)}]
-          [reagent-toolbox.core/radio-button {:label    \"From Hell\"
-                                              :value    \"fromhell\"
-                                              :disabled true}]
-          [reagent-toolbox.core/radio-button {:label     \"V for Vendetta\"
-                                              :value     \"vvendetta\"
-                                              :checked   (when (= (:value @radio-value) \"vvendetta\") true)
-                                              :on-change #(select %)}]
-          [reagent-toolbox.core/radio-button {:label     \"Watchmen\"
-                                              :value     \"watchmen\"
-                                              :checked   (when (= (:value @radio-value) \"watchmen\") true)
-                                              :on-change #(select %)}]]]))))
+  (let [radio-value (reagent.ratom/atom {:value \"vvendetta\"})
+        target-value (fn [t] (.. t -target -value))
+        select (fn [sel] (swap! radio-value assoc :value (target-value sel)))]
+    (fn []
+      [:div
+       [:p \"Value: \" @radio-value]
+       [reagent-toolbox.core/radio-group {:name  \"comic\"
+                                          :value (:value @radio-value)}
+        [reagent-toolbox.core/radio-button {:label     \"The Walking Dead\"
+                                            :value     \"thewalkingdead\"
+                                            :checked   (when (= (:value @radio-value) \"thewalkingdead\") true)
+                                            :on-change #(select %)}]
+        [reagent-toolbox.core/radio-button {:label    \"From Hell\"
+                                            :value    \"fromhell\"
+                                            :disabled true}]
+        [reagent-toolbox.core/radio-button {:label     \"V for Vendetta\"
+                                            :value     \"vvendetta\"
+                                            :checked   (when (= (:value @radio-value) \"vvendetta\") true)
+                                            :on-change #(select %)}]
+        [reagent-toolbox.core/radio-button {:label     \"Watchmen\"
+                                            :value     \"watchmen\"
+                                            :checked   (when (= (:value @radio-value) \"watchmen\") true)
+                                            :on-change #(select %)}]]])))
 
 [radio-buttons-test]"]
 
