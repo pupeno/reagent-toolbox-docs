@@ -12,32 +12,27 @@
      [:p "This component is intended to be a common wrapper for a group of links or buttons. "
       "It sets a minimal layout, semantic markup and spacing for each of those elements."]
 
-     [ui/display-and-eval-code
-      "(defn navigation-test
-         []
-         (let [actions [{:label \"Alarm\" :raised true :icon \"access_alarm\"}
-                        {:label \"Location\" :raised true :accent true :icon \"room\"}]
-               routes [{:href \"/navigation\"
-                        :label \"Favorite\"
-                        :icon \"favorite\"}
-                       {:href \"/navigation\"
-                        :active true
-                        :label \"History\"
-                        :icon \"history\"}]]
-           (fn []
-             [:div
-              [reagent-toolbox.core/navigation {:type \"horizontal\" :actions actions}]
-              [reagent-toolbox.core/navigation {:type \"vertical\"}
-               [reagent-toolbox.core/link {:href \"/navigation\"
-                                           :label \"Inbox\"
-                                           :icon \"inbox\"}]
-               [reagent-toolbox.core/link {:href \"/navigation\"
-                                           :active true
-                                           :label \"Profile\"
-                                           :icon \"person\"}]]
-              [reagent-toolbox.core/navigation {:routes routes}]])))
+     [ui/display-and-eval-code "
+(defn navigation-test []
+  (let [actions [{:label \"Alarm\" :raised true :icon \"access_alarm\"}
+                 {:label \"Location\" :raised true :accent true :icon \"room\"}]
+        routes [{:href \"/navigation\" :label \"Favorite\" :icon \"favorite\"}
+                {:href \"/navigation\" :active true :label \"History\" :icon \"history\"}]]
+    (fn []
+      [:div
+       [reagent-toolbox.core/navigation {:type    \"horizontal\"
+                                         :actions actions}]
+       [reagent-toolbox.core/navigation {:type \"vertical\"}
+        [reagent-toolbox.core/link {:href  \"/navigation\"
+                                    :label \"Inbox\"
+                                    :icon  \"inbox\"}]
+        [reagent-toolbox.core/link {:href   \"/navigation\"
+                                    :active true
+                                    :label  \"Profile\"
+                                    :icon   \"person\"}]]
+       [reagent-toolbox.core/navigation {:routes routes}]])))
 
-       [navigation-test]"]
+[navigation-test]"]
 
      [:p "If you want to provide a theme via context, the component key " [:code "RTCheckbox"] "."]
 

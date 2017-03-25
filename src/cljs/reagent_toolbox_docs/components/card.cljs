@@ -26,8 +26,8 @@
                                         :subtitle \"Subtitle here\"}]
       [reagent-toolbox.core/card-text \"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\"]
       [reagent-toolbox.core/card-actions
-        [reagent-toolbox.core/button {:label \"Action 1\"}]
-        [reagent-toolbox.core/button {:label \"Action 2\"}]]]))
+       [reagent-toolbox.core/button {:label \"Action 1\"}]
+       [reagent-toolbox.core/button {:label \"Action 2\"}]]]))
 
 [card-test]"]
      [:p "This component and all of its subcomponents are themeable by context using the key " [:code "RTCard"] ". "

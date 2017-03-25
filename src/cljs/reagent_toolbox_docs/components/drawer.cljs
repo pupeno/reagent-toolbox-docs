@@ -15,22 +15,21 @@
       " slides in from the left. It is a common pattern found in Google apps and follows the "
       "keylines and metrics for lists."]
 
-     [ui/display-and-eval-code
-      "(defn drawer-test
-         []
-         (let [state (reagent.ratom/atom {:active false})]
-           (fn []
-             [:div
-              [reagent-toolbox.core/button {:label \"Show Drawer\"
-                                            :raised true
-                                            :accent true
-                                            :on-click #(swap! state update :active not)}]
-              [reagent-toolbox.core/drawer {:active (@state :active)
-                                            :on-overlay-click #(swap! state update :active not)}
-               [:h5 \"This is your Drawer.\"]
-               [:p \"You can embed any content you want; for example, a Menu.\"]]])))
+     [ui/display-and-eval-code "
+(defn drawer-test []
+  (let [state (reagent.ratom/atom {:active false})]
+    (fn []
+      [:div
+       [reagent-toolbox.core/button {:label    \"Show Drawer\"
+                                     :raised   true
+                                     :accent   true
+                                     :on-click #(swap! state update :active not)}]
+       [reagent-toolbox.core/drawer {:active           (@state :active)
+                                     :on-overlay-click #(swap! state update :active not)}
+        [:h5 \"This is your Drawer.\"]
+        [:p \"You can embed any content you want; for example, a Menu.\"]]])))
 
-      [drawer-test]"]
+[drawer-test]"]
 
      [:p "If you want to provide a theme via context, the component key is " [:code "RTDrawer"] "."]
 

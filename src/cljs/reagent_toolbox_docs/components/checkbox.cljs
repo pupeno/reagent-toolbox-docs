@@ -15,22 +15,21 @@
       "preserve space by using checkboxes instead of on/off switches. If you have a single option, avoid using a checkbox "
       "and use an on/off switch instead."]
 
-     [ui/display-and-eval-code
-      "(defn checkbox-test
-         []
-         (let [checkboxes (reagent.ratom/atom {:box1 true :box2 false})]
-           (fn []
-            [:div
-             [reagent-toolbox.core/checkbox {:checked (@checkboxes :box1)
-                                             :label (if (@checkboxes :box1) \"Checked\" \"Unchecked\")
-                                             :on-change #(swap! checkboxes update :box1 not)}]
-             [reagent-toolbox.core/checkbox {:checked (@checkboxes :box2)
-                                             :label (if (@checkboxes :box2) \"Checked\" \"Unchecked\")
-                                             :on-change #(swap! checkboxes update :box2 not)}]
-             [reagent-toolbox.core/checkbox {:disabled true
-                                             :label \"Disabled checkbox\"}]])))
+     [ui/display-and-eval-code "
+(defn checkbox-test []
+  (let [checkboxes (reagent.ratom/atom {:box1 true :box2 false})]
+    (fn []
+      [:div
+       [reagent-toolbox.core/checkbox {:checked   (@checkboxes :box1)
+                                       :label     (if (@checkboxes :box1) \"Checked\" \"Unchecked\")
+                                       :on-change #(swap! checkboxes update :box1 not)}]
+       [reagent-toolbox.core/checkbox {:checked   (@checkboxes :box2)
+                                       :label     (if (@checkboxes :box2) \"Checked\" \"Unchecked\")
+                                       :on-change #(swap! checkboxes update :box2 not)}]
+       [reagent-toolbox.core/checkbox {:disabled true
+                                       :label    \"Disabled checkbox\"}]])))
 
-       [checkbox-test]"]
+[checkbox-test]"]
 
      [:p "If you want to provide a theme via context, the component key " [:code "RTCheckbox"] "."]
 

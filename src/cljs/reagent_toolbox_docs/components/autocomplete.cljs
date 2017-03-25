@@ -13,25 +13,25 @@
 (defn autocomplete-test []
   (let [single-value (reagent.ratom/atom \"\")
         multi-value (reagent.ratom/atom [])]
-   (fn []
-     (let [countries [\"Spain\", \"United Kingdom\", \"USA\", \"Thailand\", \"Tongo\", \"Slovenia\"]
-           languages {:es \"Spanish\" :en \"English\" :fr \"French\" :de \"German\"}]
-       [:div
-         [:p \"Value: \" (pr-str @single-value)]
-         [reagent-toolbox.core/autocomplete {:source    countries
-                                             :value     @single-value
-                                             :multiple  false
-                                             :label     \"Choose a country\"
-                                             :hint      \"You can only choose one...\"
-                                             :on-change #(reset! single-value %)}]
+    (fn []
+      (let [countries [\"Spain\", \"United Kingdom\", \"USA\", \"Thailand\", \"Tongo\", \"Slovenia\"]
+            languages {:es \"Spanish\" :en \"English\" :fr \"French\" :de \"German\"}]
+        [:div
+          [:p \"Value: \" (pr-str @single-value)]
+          [reagent-toolbox.core/autocomplete {:source    countries
+                                              :value     @single-value
+                                              :multiple  false
+                                              :label     \"Choose a country\"
+                                              :hint      \"You can only choose one...\"
+                                              :on-change #(reset! single-value %)}]
 
-         [:p \"Value: \" (pr-str @multi-value)]
-         [reagent-toolbox.core/autocomplete {:source    languages
-                                             :value     @multi-value
-                                             :multiple  true
-                                             :label     \"Choose languages\"
-                                             :hint      \"You can many...\"
-                                             :on-change #(reset! multi-value %)}]]))))
+          [:p \"Value: \" (pr-str @multi-value)]
+          [reagent-toolbox.core/autocomplete {:source    languages
+                                              :value     @multi-value
+                                              :multiple  true
+                                              :label     \"Choose languages\"
+                                              :hint      \"You can many...\"
+                                              :on-change #(reset! multi-value %)}]]))))
 
 [autocomplete-test]"]
      [:p "If you want to provide a theme via context, the component key is " [:code "RTAutocomplete"] "."]

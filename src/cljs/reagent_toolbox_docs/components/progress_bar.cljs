@@ -13,19 +13,18 @@
       "each operation with a single activity indicator. For example, a refresh operation should "
       "display either a refresh bar or an activity circle, but not both."]
 
-     [ui/display-and-eval-code
-      "(defn progress-bar-test
-        []
-        (fn []
-          [:div
-           [reagent-toolbox.core/progress-bar {:type \"circular\"
-                                               :mode \"indeterminate\"}]
-           [reagent-toolbox.core/progress-bar {:type \"linear\"
-                                               :mode \"determinate\"
-                                               :value 83
-                                               :buffer 90}]]))
+     [ui/display-and-eval-code "
+(defn progress-bar-test []
+  (fn []
+    [:div
+     [reagent-toolbox.core/progress-bar {:type \"circular\"
+                                         :mode \"indeterminate\"}]
+     [reagent-toolbox.core/progress-bar {:type   \"linear\"
+                                         :mode   \"determinate\"
+                                         :value  83
+                                         :buffer 90}]]))
 
-       [progress-bar-test]"]
+[progress-bar-test]"]
 
      [:p "If you want to provide a theme via context, the component key is " [:code "RTProgressBar"] "."]
 

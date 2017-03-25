@@ -13,24 +13,23 @@
       "the current state and a down arrow. When it is clicked, it displays the list of "
       "available options."]
 
-     [ui/display-and-eval-code
-      "(defn dropdown-test
-         []
-         (let [countries [{:value nil :label \"None\"}
-                          {:value :en :label \"English\"}
-                          {:value :es :label \"Spainish\"}
-                          {:value :eo :label \"Esperanto\"}
-                          {:value \"many\" :label \"Many languages\"}]
-               state (reagent.ratom/atom :es)]
-           (fn []
-             [:div
-              [:p \"Value: \" (pr-str @state)]
-              [reagent-toolbox.core/dropdown {:auto true
-                                              :on-change #(reset! state %)
-                                              :source countries
-                                              :value @state}]])))
+     [ui/display-and-eval-code "
+(defn dropdown-test []
+  (let [countries [{:value nil :label \"None\"}
+                   {:value :en :label \"English\"}
+                   {:value :es :label \"Spainish\"}
+                   {:value :eo :label \"Esperanto\"}
+                   {:value \"many\" :label \"Many languages\"}]
+        state (reagent.ratom/atom :es)]
+    (fn []
+      [:div
+       [:p \"Value: \" (pr-str @state)]
+       [reagent-toolbox.core/dropdown {:auto      true
+                                       :on-change #(reset! state %)
+                                       :source    countries
+                                       :value     @state}]])))
 
-       [dropdown-test]"]
+[dropdown-test]"]
 
      [:p "If you want to provide a theme via context, the component key is " [:code "RTDropdown"] "."]
 

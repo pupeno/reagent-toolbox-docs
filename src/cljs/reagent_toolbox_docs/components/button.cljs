@@ -19,7 +19,7 @@
         [reagent-toolbox.core/button {:href   \"http://github.com/dashmantech/reagent-toolbox\"
                                       :target \"_blank\"
                                       :raised true}
-          github-icon \"Github\"]
+         github-icon \"Github\"]
         [reagent-toolbox.core/button {:icon  \"bookmark\"
                                       :label \"Bookmark\"
                                       :accent true}]
@@ -41,7 +41,7 @@
         [reagent-toolbox.core/icon-button {:icon   github-icon
                                            :accent true}]
         [reagent-toolbox.core/icon-button {:primary true}
-          github-icon]
+         github-icon]
         [reagent-toolbox.core/button {:icon    \"add\"
                                       :label   \"Add this\"
                                       :flat    true

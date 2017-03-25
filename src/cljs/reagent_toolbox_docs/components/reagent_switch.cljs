@@ -15,25 +15,24 @@
       "corresponding inline label. Switches take on the same visual properties of the radio "
       "button."]
 
-     [ui/display-and-eval-code
-      "(defn switch-test
-         []
-         (letfn [(flip [a k] (swap! a update k not))]
-           (let [switches (reagent.ratom/atom {:switch1 true :switch2 false :switch3 true})]
-             (fn []
-               [:section
-                [reagent-toolbox.core/switch {:checked (@switches :switch1)
-                                              :label \"Push notifications\"
-                                              :on-change #(flip switches :switch1)}]
-                [reagent-toolbox.core/switch {:checked (@switches :switch2)
-                                              :label \"Mail notifications\"
-                                              :on-change #(flip switches :switch2)}]
-                [reagent-toolbox.core/switch {:checked (@switches :switch3)
-                                              :disabled true
-                                              :label \"Nothing, thanks\"
-                                              :on-change #(flip switches :switch3)}]]))))
+     [ui/display-and-eval-code "
+(defn switch-test []
+  (letfn [(flip [a k] (swap! a update k not))]
+    (let [switches (reagent.ratom/atom {:switch1 true :switch2 false :switch3 true})]
+      (fn []
+        [:section
+         [reagent-toolbox.core/switch {:checked (@switches :switch1)
+                                       :label \"Push notifications\"
+                                       :on-change #(flip switches :switch1)}]
+         [reagent-toolbox.core/switch {:checked (@switches :switch2)
+                                       :label \"Mail notifications\"
+                                       :on-change #(flip switches :switch2)}]
+         [reagent-toolbox.core/switch {:checked (@switches :switch3)
+                                       :disabled true
+                                       :label \"Nothing, thanks\"
+                                       :on-change #(flip switches :switch3)}]]))))
 
-       [switch-test]"]
+[switch-test]"]
 
      [:p "This component can be styled by context providing a theme with the key " [:code "RTSwitch"] "through the "
       "theme provider."]

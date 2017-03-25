@@ -13,23 +13,22 @@
       "It's not included in Material Design Specification but we provide it as an easy way to "
       "create links with icons and counters."]
 
-     [ui/display-and-eval-code
-      "(defn link-text
-         []
-         (fn []
-           [:div
-            [reagent-toolbox.core/link {:active true
-                                        :href \"/link\"
-                                        :label \"Work\"
-                                        :count 4
-                                        :icon \"business\"}]
-            [reagent-toolbox.core/link {:href \"/link\"
-                                        :label \"Blog\"
-                                        :icon \"speaker_notes\"}]
-            [reagent-toolbox.core/link {:href \"/link\"
-                                        :label \"Explore\"
-                                        :icon \"explore\"}]]))
-       [link-text]"]
+     [ui/display-and-eval-code "
+(defn link-text []
+  (fn []
+    [:div
+     [reagent-toolbox.core/link {:active true
+                                 :href   \"/link\"
+                                 :label  \"Work\"
+                                 :count  4
+                                 :icon   \"business\"}]
+     [reagent-toolbox.core/link {:href  \"/link\"
+                                 :label \"Blog\"
+                                 :icon  \"speaker_notes\"}]
+     [reagent-toolbox.core/link {:href  \"/link\"
+                                 :label \"Explore\"
+                                 :icon  \"explore\"}]]))
+[link-text]"]
 
      [:p "If you want to provide a theme via context, the component key is " [:code "RTLink"] "."]
 

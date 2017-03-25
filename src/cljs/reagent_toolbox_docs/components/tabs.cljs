@@ -21,44 +21,44 @@
      [:div
        [reagent-toolbox.core/tabs {:index     @index
                                    :on-change #(reset! index %)}
-         [reagent-toolbox.core/tab {:label \"First\"}
-           [:small \"Primary content\"]]
-         [reagent-toolbox.core/tab {:label \"Second\"}
-           [:small \"Secondary content\"]]
-         [reagent-toolbox.core/tab {:label \"Third\" :disabled true}
-           [:small \"Terciary content\"]]
-         [reagent-toolbox.core/tab {:label \"Fourth\" :hidden true}
-           [:small \"Quaternary content\"]]
-         [reagent-toolbox.core/tab {:label \"Fifth\"}
-           [:small \"Quinary content\"]]]
+        [reagent-toolbox.core/tab {:label \"First\"}
+         [:small \"Primary content\"]]
+        [reagent-toolbox.core/tab {:label \"Second\"}
+         [:small \"Secondary content\"]]
+        [reagent-toolbox.core/tab {:label \"Third\" :disabled true}
+         [:small \"Terciary content\"]]
+        [reagent-toolbox.core/tab {:label \"Fourth\" :hidden true}
+         [:small \"Quaternary content\"]]
+        [reagent-toolbox.core/tab {:label \"Fifth\"}
+         [:small \"Quinary content\"]]]
 
        [reagent-toolbox.core/tabs {:index     @fixed-index
                                    :on-change #(reset! fixed-index %)
                                    :fixed     true}
-         [reagent-toolbox.core/tab {:label \"First\"}
-           [:small \"Primary content\"]]
-         [reagent-toolbox.core/tab {:label \"Second\"}
-           [:small \"Secondary content\"]]
-         [reagent-toolbox.core/tab {:label \"Third\" :disabled true}
-           [:small \"Terciary content\"]]
-         [reagent-toolbox.core/tab {:label \"Fourth\" :hidden true}
-           [:small \"Quaternary content\"]]
-         [reagent-toolbox.core/tab {:label \"Fifth\"}
-           [:small \"Quinary content\"]]]
+        [reagent-toolbox.core/tab {:label \"First\"}
+         [:small \"Primary content\"]]
+        [reagent-toolbox.core/tab {:label \"Second\"}
+         [:small \"Secondary content\"]]
+        [reagent-toolbox.core/tab {:label \"Third\" :disabled true}
+         [:small \"Terciary content\"]]
+        [reagent-toolbox.core/tab {:label \"Fourth\" :hidden true}
+         [:small \"Quaternary content\"]]
+        [reagent-toolbox.core/tab {:label \"Fifth\"}
+         [:small \"Quinary content\"]]]
 
        [reagent-toolbox.core/tabs {:index     @inverse-index
                                    :on-change #(reset! inverse-index %)
                                    :inverse   true}
-         [reagent-toolbox.core/tab {:label \"First\"}
-           [:small \"Primary content\"]]
-         [reagent-toolbox.core/tab {:label \"Second\"}
-           [:small \"Secondary content\"]]
-         [reagent-toolbox.core/tab {:label \"Third\" :disabled true}
-           [:small \"Terciary content\"]]
-         [reagent-toolbox.core/tab {:label \"Fourth\" :hidden true}
-           [:small \"Quaternary content\"]]
-         [reagent-toolbox.core/tab {:label \"Fifth\"}
-           [:small \"Quinary content\"]]]])))
+        [reagent-toolbox.core/tab {:label \"First\"}
+         [:small \"Primary content\"]]
+        [reagent-toolbox.core/tab {:label \"Second\"}
+         [:small \"Secondary content\"]]
+        [reagent-toolbox.core/tab {:label \"Third\" :disabled true}
+         [:small \"Terciary content\"]]
+        [reagent-toolbox.core/tab {:label \"Fourth\" :hidden true}
+         [:small \"Quaternary content\"]]
+        [reagent-toolbox.core/tab {:label \"Fifth\"}
+         [:small \"Quinary content\"]]]])))
 
 [tabs-test]"]
      [:p "If you want to provide a theme via context, the component key is " [:code "RTTabs"] "."]
