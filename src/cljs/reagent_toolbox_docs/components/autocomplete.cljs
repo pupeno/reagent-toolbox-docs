@@ -8,33 +8,35 @@
   (fn []
     [:article
      [:h1 "Autocomplete"]
-     [:p "An input field with a set of predeterminated labeled values. When it's focused it shows a list of options that are filtered by label as the user types. They can be simple or multiple depending on the amount of values that can be selected. The opening direction is determined by its current position at opening time."]
+     [:p "An input field with a set of predeterminated labeled values. When it's focused it shows a list of options "
+      "that are filtered by label as the user types. They can be simple or multiple depending on the amount of values "
+      "that can be selected. The opening direction is determined by its current position at opening time."]
      [ui/display-and-eval-code "
 (defn autocomplete-test []
   (let [single-value (reagent.ratom/atom \"\")
         multi-value (reagent.ratom/atom [])]
-   (fn []
-     (let [countries [\"Spain\", \"United Kingdom\", \"USA\", \"Thailand\", \"Tongo\", \"Slovenia\"]
-           languages {:es \"Spanish\" :en \"English\" :fr \"French\" :de \"German\"}]
-       [:div
-         [:p \"Value: \" (pr-str @single-value)]
-         [reagent-toolbox.core/autocomplete {:source    countries
-                                             :value     @single-value
-                                             :multiple  false
-                                             :label     \"Choose a country\"
-                                             :hint      \"You can only choose one...\"
-                                             :on-change #(reset! single-value %)}]
+    (fn []
+      (let [countries [\"Spain\", \"United Kingdom\", \"USA\", \"Thailand\", \"Tongo\", \"Slovenia\"]
+            languages {:es \"Spanish\" :en \"English\" :fr \"French\" :de \"German\"}]
+        [:div
+          [:p \"Value: \" (pr-str @single-value)]
+          [reagent-toolbox.core/autocomplete {:source    countries
+                                              :value     @single-value
+                                              :multiple  false
+                                              :label     \"Choose a country\"
+                                              :hint      \"You can only choose one...\"
+                                              :on-change #(reset! single-value %)}]
 
-         [:p \"Value: \" (pr-str @multi-value)]
-         [reagent-toolbox.core/autocomplete {:source    languages
-                                             :value     @multi-value
-                                             :multiple  true
-                                             :label     \"Choose languages\"
-                                             :hint      \"You can many...\"
-                                             :on-change #(reset! multi-value %)}]]))))
+          [:p \"Value: \" (pr-str @multi-value)]
+          [reagent-toolbox.core/autocomplete {:source    languages
+                                              :value     @multi-value
+                                              :multiple  true
+                                              :label     \"Choose languages\"
+                                              :hint      \"You can many...\"
+                                              :on-change #(reset! multi-value %)}]]))))
 
 [autocomplete-test]"]
-     [:p "If you want to provide a theme via context, the component key is RTAutocomplete."]
+     [:p "If you want to provide a theme via context, the component key is " [:code "RTAutocomplete"] "."]
      [:section
       [:h2 "Properties"]
       [:table
@@ -68,7 +70,7 @@
          [:td "If true, component will be disabled."]]
         [:tr
          [:td [:code "error"]]
-         [:td [:code "string"] " or " "Reagent component"]
+         [:td [:code "string"] " or reagent component"]
          [:td]
          [:td "Sets the error string for the internal input element."]]
         [:tr
@@ -78,7 +80,7 @@
          [:td "Whether component should keep focus after value change."]]
         [:tr
          [:td [:code "label"]]
-         [:td [:code "string"] " or " "Reagent component"]
+         [:td [:code "string"] " or reagent component"]
          [:td]
          [:td "The text string to use for the floating label element."]]
         [:tr

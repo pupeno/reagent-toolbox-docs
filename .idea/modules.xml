@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/checkouts/reagent-toolbox/reagent-toolbox.iml" filepath="$PROJECT_DIR$/checkouts/reagent-toolbox/reagent-toolbox.iml" />
       <module fileurl="file://$PROJECT_DIR$/reagent-toolbox-docs.iml" filepath="$PROJECT_DIR$/reagent-toolbox-docs.iml" />
     </modules>
   </component>

@@ -10,7 +10,7 @@
      [:h1 "Button"]
      [:p "A " [:a {:href "https://material.io/guidelines/components/buttons.html"} "button"] " clearly communicates "
       "what action will occur when the user touches it. It consists of text, an image, or both, designed in accordance "
-      "with your app’s color theme."]
+      "with your app's color theme."]
      [ui/display-and-eval-code "
 (defn button-test []
   (fn []
@@ -19,7 +19,7 @@
         [reagent-toolbox.core/button {:href   \"http://github.com/dashmantech/reagent-toolbox\"
                                       :target \"_blank\"
                                       :raised true}
-          github-icon \"Github\"]
+         github-icon \"Github\"]
         [reagent-toolbox.core/button {:icon  \"bookmark\"
                                       :label \"Bookmark\"
                                       :accent true}]
@@ -41,7 +41,7 @@
         [reagent-toolbox.core/icon-button {:icon   github-icon
                                            :accent true}]
         [reagent-toolbox.core/icon-button {:primary true}
-          github-icon]
+         github-icon]
         [reagent-toolbox.core/button {:icon    \"add\"
                                       :label   \"Add this\"
                                       :flat    true
@@ -95,7 +95,7 @@
          [:td "Creates a link for the button."]]
         [:tr
          [:td [:code "icon"]]
-         [:td [:code "string"] " or Reagent component"]
+         [:td [:code "string"] " or reagent component"]
          [:td]
          [:td "Value of the icon (See Font Icon Component)."]]
         [:tr

@@ -8,7 +8,9 @@
   (fn []
     [:article
      [:h1 "App Bar"]
-     [:p "The app bar is a special kind of toolbar that’s used for branding, navigation, search, and actions. Usually it contains controls on the right and left side and a title with the current section or app name. You should give the content with children elements."]
+     [:p "The app bar is a special kind of toolbar that's used for branding, navigation, search, and actions. Usually "
+      "it contains controls on the right and left side and a title with the current section or app name. You should "
+      "give the content with children elements."]
      [ui/display-and-eval-code "
 (defn app-bar-test []
   (fn []
@@ -26,9 +28,10 @@
         [reagent-toolbox.core/link {:href \"http://\" :label \"Profile\" :icon \"person\" :active true}]]])))
 
 [app-bar-test]"]
-     [:p "If you want to provide a theme via context, the component key is "
-      [:code "RTAppBar"] "."]
-     [:p "The app-bar component provides properties for the common use cases of title, leftIcon and rightIcon. However, you can also override these with your own content by not specifying these and instead provide children elements, as shown in the example."]
+     [:p "If you want to provide a theme via context, the component key is " [:code "RTAppBar"] "."]
+     [:p "The app-bar component provides properties for the common use cases of title, leftIcon and rightIcon. "
+      "However, you can also override these with your own content by not specifying these and instead provide "
+      "children elements, as shown in the example."]
      [:section
       [:h2 "Properties"]
       [:table
@@ -48,9 +51,7 @@
          [:td [:code "fixed"]]
          [:td [:code "boolean"]]
          [:td [:code "false"]]
-         [:td "Determine if the bar should have position "
-          [:code "fixed"] " or "
-          [:code "relative"] "."]]
+         [:td "Determine if the bar should have position " [:code "fixed"] " or " [:code "relative"] "."]]
         [:tr
          [:td [:code "flat"]]
          [:td [:code "boolean"]]
@@ -68,22 +69,22 @@
          [:td "Title used for the app-bar."]]
         [:tr
          [:td [:code "left-icon"]]
-         [:td [:code "string or element"]]
+         [:td [:code "string"] " or reagent component"]
          [:td [:code "nil"]]
          [:td "Left icon."]]
         [:tr
          [:td [:code "on-left-icon-click"]]
-         [:td [:code "Function"]]
+         [:td [:code "function"]]
          [:td [:code "nil"]]
          [:td "Called on left icon click event."]]
         [:tr
          [:td [:code "right-icon"]]
-         [:td [:code "string or element"]]
+         [:td [:code "string"] " or reagent component"]
          [:td [:code "nil"]]
          [:td "Right icon."]]
         [:tr
          [:td [:code "on-right-icon-click"]]
-         [:td [:code "Function"]]
+         [:td [:code "function"]]
          [:td [:code "nil"]]
          [:td "Called on right icon click event."]]
         [:tr

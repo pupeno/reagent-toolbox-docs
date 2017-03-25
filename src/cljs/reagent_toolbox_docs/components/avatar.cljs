@@ -26,66 +26,67 @@
 
 [avatar-test]"]
      [:p "If you want to provide a theme via context, the component key is " [:code "RTAvatar"] "."]
-     [:section [:h2 "Properties"]]
-     [:table
-      [:thead
-       [:tr
-        [:th "Name"]
-        [:th "Type"]
-        [:th "Default"]
-        [:th "Description"]]]
-      [:tbody
-       [:tr
-        [:td [:code "children"]]
-        [:td "Reagent component"]
-        [:td]
-        [:td "Children for the avatar. You can pass an SVG for a custom icon or, for example, an image."]]
-       [:tr
-        [:td [:code "class-name"]]
-        [:td [:code "string"]]
-        [:td [:code "\"\""]]
-        [:td "Set a class to style the Component."]]
-       [:tr
-        [:td [:code "cover"]]
-        [:td [:code "boolean"]]
-        [:td [:code "\"\""]]
-        [:td "Set to true if your image is not squared so it will be used as a cover for the element."]]
-       [:tr
-        [:td [:code "icon"]]
-        [:td [:code "string"] " or Reagent component"]
-        [:td]
-        [:td "A key to identify an Icon from Material Design Icons or a custom Icon Element."]]
-       [:tr
-        [:td [:code "image"]]
-        [:td [:code "string"] " or Reagent component"]
-        [:td]
-        [:td "An image source or an image element."]]
-       [:tr
-        [:td [:code "title"]]
-        [:td [:code "string"]]
-        [:td [:code "\"\""]]
-        [:td "A title for the image. If no image is provided, the first letter will be displayed as the avatar."]]
-       [:tr
-        [:td [:code "theme"]]
-        [:td [:code "object"]]
-        [:td [:code "nil"]]
-        [:td "Classnames object defining the component style."]]]]
-     [:section [:h2 "Theme"]]
-     [:table
-      [:thead
-       [:tr
-        [:th "Name"]
-        [:th "Description"]]]
-      [:tbody
-       [:tr
-        [:td [:code "avatar"]]
-        [:td "Used for the root class of the element."]]
-       [:tr
-        [:td [:code "image"]]
-        [:td "Added to the root element when the component has image."]]
-       [:tr
-        [:td [:code "letter"]]
-        [:td "Used for the root element if the component shows the letter."]]]]]))
+     [:section
+      [:h2 "Properties"]
+      [:table
+       [:thead
+        [:tr
+         [:th "Name"]
+         [:th "Type"]
+         [:th "Default"]
+         [:th "Description"]]]
+       [:tbody
+        [:tr
+         [:td [:code "children"]]
+         [:td "reagent component"]
+         [:td]
+         [:td "Children for the avatar. You can pass an SVG for a custom icon or, for example, an image."]]
+        [:tr
+         [:td [:code "class-name"]]
+         [:td [:code "string"]]
+         [:td [:code "\"\""]]
+         [:td "Set a class to style the Component."]]
+        [:tr
+         [:td [:code "cover"]]
+         [:td [:code "boolean"]]
+         [:td [:code "\"\""]]
+         [:td "Set to true if your image is not squared so it will be used as a cover for the element."]]
+        [:tr
+         [:td [:code "icon"]]
+         [:td [:code "string"] " or reagent component"]
+         [:td]
+         [:td "A key to identify an Icon from Material Design Icons or a custom Icon Element."]]
+        [:tr
+         [:td [:code "image"]]
+         [:td [:code "string"] " or reagent component"]
+         [:td]
+         [:td "An image source or an image element."]]
+        [:tr
+         [:td [:code "title"]]
+         [:td [:code "string"]]
+         [:td [:code "\"\""]]
+         [:td "A title for the image. If no image is provided, the first letter will be displayed as the avatar."]]
+        [:tr
+         [:td [:code "theme"]]
+         [:td [:code "object"]]
+         [:td [:code "nil"]]
+         [:td "Classnames object defining the component style."]]]]]
+     [:section [:h2 "Theme"]
+      [:table
+       [:thead
+        [:tr
+         [:th "Name"]
+         [:th "Description"]]]
+       [:tbody
+        [:tr
+         [:td [:code "avatar"]]
+         [:td "Used for the root class of the element."]]
+        [:tr
+         [:td [:code "image"]]
+         [:td "Added to the root element when the component has image."]]
+        [:tr
+         [:td [:code "letter"]]
+         [:td "Used for the root element if the component shows the letter."]]]]]]))
 
 (defmethod layout/pages :avatar [_]
   [view])

@@ -7,7 +7,20 @@
             reagent-toolbox-docs.components.autocomplete
             reagent-toolbox-docs.components.avatar
             reagent-toolbox-docs.components.button
+            reagent-toolbox-docs.components.card
+            reagent-toolbox-docs.components.checkbox
+            reagent-toolbox-docs.components.drawer
+            reagent-toolbox-docs.components.dropdown
+            reagent-toolbox-docs.components.font-icon
             reagent-toolbox-docs.components.input
+            reagent-toolbox-docs.components.link
+            reagent-toolbox-docs.components.navigation
+            reagent-toolbox-docs.components.progress-bar
+            reagent-toolbox-docs.components.radio-buttons
+            reagent-toolbox-docs.components.switch-
+            reagent-toolbox-docs.components.slider
+            reagent-toolbox-docs.components.snackbar
+            reagent-toolbox-docs.components.tabs
             reagent-toolbox-docs.components.time-picker
             [reagent-toolbox-docs.db :as db]
             [reagent-toolbox-docs.routing :as routing]
