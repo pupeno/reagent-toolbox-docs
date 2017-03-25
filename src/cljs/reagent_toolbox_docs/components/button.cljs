@@ -10,7 +10,7 @@
      [:h1 "Button"]
      [:p "A " [:a {:href "https://material.io/guidelines/components/buttons.html"} "button"] " clearly communicates "
       "what action will occur when the user touches it. It consists of text, an image, or both, designed in accordance "
-      "with your app’s color theme."]
+      "with your app's color theme."]
      [ui/display-and-eval-code "
 (defn button-test []
   (fn []

@@ -8,7 +8,7 @@
   (fn []
     [:article
      [:h1 "App Bar"]
-     [:p "The app bar is a special kind of toolbar that’s used for branding, navigation, search, and actions. Usually it contains controls on the right and left side and a title with the current section or app name. You should give the content with children elements."]
+     [:p "The app bar is a special kind of toolbar that's used for branding, navigation, search, and actions. Usually it contains controls on the right and left side and a title with the current section or app name. You should give the content with children elements."]
      [ui/display-and-eval-code "
 (defn app-bar-test []
   (fn []
