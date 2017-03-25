@@ -35,8 +35,8 @@
 
        [switch-test]"]
 
-     [:p "This component can be styled by context providing a theme with the key RTSwitch "
-      "through the theme provider."]
+     [:p "This component can be styled by context providing a theme with the key " [:code "RTSwitch"] "through the "
+      "theme provider."]
 
      [:section
       [:h2 "Properties"]

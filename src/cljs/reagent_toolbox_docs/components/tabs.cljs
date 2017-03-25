@@ -61,7 +61,7 @@
            [:small \"Quinary content\"]]]])))
 
 [tabs-test]"]
-     [:p "If you want to provide a theme via context, the component key is " [:code "RTTabs."]]
+     [:p "If you want to provide a theme via context, the component key is " [:code "RTTabs"] "."]
      [:section
       [:h2 "Tabs"]
       [:p "This component acts as the wrapper and the main controller of the content that is being displayed. It gets "

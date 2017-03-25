@@ -32,7 +32,7 @@
 
       [drawer-test]"]
 
-     [:p "If you want to provide a theme via context, the component key is RTDrawer."]
+     [:p "If you want to provide a theme via context, the component key is " [:code "RTDrawer"] "."]
 
      [:section
       [:h2 "Properties"]

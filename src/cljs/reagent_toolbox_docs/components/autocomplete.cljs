@@ -34,7 +34,7 @@
                                              :on-change #(reset! multi-value %)}]]))))
 
 [autocomplete-test]"]
-     [:p "If you want to provide a theme via context, the component key is RTAutocomplete."]
+     [:p "If you want to provide a theme via context, the component key is " [:code "RTAutocomplete"] "."]
      [:section
       [:h2 "Properties"]
       [:table

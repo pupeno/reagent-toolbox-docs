@@ -31,7 +31,7 @@
                                         :icon \"explore\"}]]))
        [link-text]"]
 
-     [:p "If you want to provide a theme via context, the component key is RTLink."]
+     [:p "If you want to provide a theme via context, the component key is " [:code "RTLink"] "."]
 
      [:section
       [:h2 "Properties"]

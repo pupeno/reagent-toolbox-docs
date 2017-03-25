@@ -32,7 +32,7 @@
 
        [dropdown-test]"]
 
-     [:p "If you want to provide a theme via context, the component key is RTDropdown."]
+     [:p "If you want to provide a theme via context, the component key is " [:code "RTDropdown"] "."]
 
      [:section
       [:h2 "Properties"]

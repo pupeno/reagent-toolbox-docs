@@ -26,8 +26,7 @@
         [reagent-toolbox.core/link {:href \"http://\" :label \"Profile\" :icon \"person\" :active true}]]])))
 
 [app-bar-test]"]
-     [:p "If you want to provide a theme via context, the component key is "
-      [:code "RTAppBar"] "."]
+     [:p "If you want to provide a theme via context, the component key is " [:code "RTAppBar"] "."]
      [:p "The app-bar component provides properties for the common use cases of title, leftIcon and rightIcon. However, you can also override these with your own content by not specifying these and instead provide children elements, as shown in the example."]
      [:section
       [:h2 "Properties"]
