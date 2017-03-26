@@ -11,11 +11,14 @@ html, body {
     #whole-page-wrapper {
       display: flex;
       flex-direction: column;
+
       #main-and-asides {
         display: flex;
         flex-direction: row;
 
         aside.menu {
+          min-width: 175px;
+
           a {
             text-decoration: none;
           }
@@ -28,9 +31,10 @@ html, body {
     }
 
     footer {
+      background-color: lightgray;
+
       img.dashman-logo {
         vertical-align: text-bottom;
-        background-color: lightgray;
       }
     }
   }
