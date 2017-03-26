@@ -4,39 +4,6 @@
   (:require [reagent-toolbox-docs.layout :as layout]
             [reagent-toolbox-docs.ui :as ui]))
 
-(defn list-test []
-  (let [notify-new-comics (reagent.ratom/atom false)]
-    (fn []
-      [:div
-       [reagent-toolbox.core/list {:selectable true
-                                   :ripple     true}
-        [reagent-toolbox.core/list-sub-header {:caption "Explore characters"}]
-        [reagent-toolbox.core/list-item {:avatar     "http://vignette1.wikia.nocookie.net/watchmen/images/7/7c/Doctor_Manhattan_%28movie%29.jpg"
-                                         :caption    "Dr. Manhattan"
-                                         :legend     "Jonathan 'Jon' Osterman"
-                                         :right-icon "star"}]
-
-        [reagent-toolbox.core/list-item {:avatar     "http://vignette1.wikia.nocookie.net/watchmen/images/5/5b/Ozymandias.jpg"
-                                         :caption    "Ozymandias"
-                                         :legend     "Adrian veidt"
-                                         :right-icon "star"}]
-
-        [reagent-toolbox.core/list-item {:avatar     "http://vignette3.wikia.nocookie.net/watchmen/images/6/64/Rorschach.jpg"
-                                         :caption    "Rorschach"
-                                         :legend     "Walter Joseph Kovacs"
-                                         :right-icon "star"}]
-
-        [reagent-toolbox.core/list-sub-header {:caption "Configuration"}]
-        [reagent-toolbox.core/list-checkbox {:caption   "Notify new comics"
-                                             :legend    "You will receive a notification when a new one is published"
-                                             :checked   @notify-new-comics
-                                             :on-change #(reset! notify-new-comics %)}]
-        [reagent-toolbox.core/list-divider]
-        [reagent-toolbox.core/list-item {:caption   "Contact the publisher"
-                                         :left-icon "send"}]
-        [reagent-toolbox.core/list-item {:caption   "Remove this publication"
-                                         :left-icon "delete"}]]])))
-
 (defn view []
   (fn []
     [:article
