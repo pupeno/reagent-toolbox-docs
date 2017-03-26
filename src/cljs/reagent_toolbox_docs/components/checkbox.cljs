@@ -46,7 +46,7 @@
          [:td "Value for the checkbox, can be true or false."]]
         [:tr
          [:td [:code "children"]]
-         [:td [:code "string, element, or array"]]
+         [:td [:code "string, element, or vector"]]
          [:td]
          [:td "Children to pass through the component."]]
         [:tr

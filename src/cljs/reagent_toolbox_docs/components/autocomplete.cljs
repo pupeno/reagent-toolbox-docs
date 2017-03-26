@@ -112,7 +112,7 @@
          [:td [:code "source"]]
          [:td [:code "map"] " or " [:code "vector"]]
          [:td]
-         [:td "Object of key/values or array representing all items suggested."]]
+         [:td "Object of key/values or vector representing all items suggested."]]
         [:tr
          [:td [:code "selected-position"]]
          [:td [:code "string"]]
@@ -146,7 +146,7 @@
          [:td [:code "value"]]
          [:td [:code "string"] ", " [:code "vector"] " or " [:code "map"]]
          [:td]
-         [:td "Value or array of values currently selected component."]]]]
+         [:td "Value or vector of values currently selected component."]]]]
       [:p "Additional properties will be passed to the Input Component so you can use " [:code "hint"] ", "
        [:code "name"] " ... etc."]]
      [:section
