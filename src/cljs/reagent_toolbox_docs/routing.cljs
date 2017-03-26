@@ -21,10 +21,10 @@
                           [:link [["link"]]]
                           [:navigation [["navigation"]]]
                           [:progress-bar [["progress-bar"]]]
-                          [:switch [["reagent-switch"]]]
                           [:radio-buttons [["radio-buttons"]]]
                           [:slider [["slider"]]]
                           [:snackbar [["snackbar"]]]
+                          [:switch [["switch"]]]
                           [:tabs [["tabs"]]]
                           [:time-picker [["time-picker"]]]]))
 
