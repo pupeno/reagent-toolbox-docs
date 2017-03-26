@@ -11,7 +11,7 @@
      [:p "The link is a very simple component that acts mostly as a wrapper for the HTML anchor. It's not included in "
       "Material Design Specification but we provide it as an easy way to create links with icons and counters."]
      [ui/display-and-eval-code "
-(defn link-text []
+(defn link-test []
   (fn []
     [:div
      [reagent-toolbox.core/link {:active true
@@ -25,8 +25,7 @@
      [reagent-toolbox.core/link {:href  \"/link\"
                                  :label \"Explore\"
                                  :icon  \"explore\"}]]))
-[link-text]"]
-
+[link-test]"]
      [:p "If you want to provide a theme via context, the component key is " [:code "RTLink"] "."]
      [:section
       [:h2 "Properties"]
