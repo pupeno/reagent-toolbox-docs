@@ -49,6 +49,7 @@
                 ["Font Icon" :font-icon]
                 ["Input" :input]
                 ["Link" :link]
+                ["List" :list]
                 ["Navigation" :navigation]
                 ["Progress Bar" :progress-bar]
                 ["Radio Buttons" :radio-buttons]

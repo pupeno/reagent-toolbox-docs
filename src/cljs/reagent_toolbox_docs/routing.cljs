@@ -19,6 +19,7 @@
                           [:font-icon [["font-icon"]]]
                           [:input [["input"]]]
                           [:link [["link"]]]
+                          [:list [["list"]]]
                           [:navigation [["navigation"]]]
                           [:progress-bar [["progress-bar"]]]
                           [:radio-buttons [["radio-buttons"]]]

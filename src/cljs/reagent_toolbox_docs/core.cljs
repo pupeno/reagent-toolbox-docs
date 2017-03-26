@@ -14,6 +14,7 @@
             reagent-toolbox-docs.components.font-icon
             reagent-toolbox-docs.components.input
             reagent-toolbox-docs.components.link
+            reagent-toolbox-docs.components.list
             reagent-toolbox-docs.components.navigation
             reagent-toolbox-docs.components.progress-bar
             reagent-toolbox-docs.components.radio-buttons
