@@ -22,6 +22,10 @@
                                     "resources/public/css"
                                     "target"]
 
+  :figwheel {:css-dirs       ["resources/public/css"]
+             :server-logfile "log/figwheel-logfile.log"
+             :ring-handler   reagent-toolbox-docs.core/app}
+
   :uberjar-name "reagent-toolbox-docs-standalone.jar"
   :heroku {:app-name "reagent-toolbox-docs"}
 
@@ -39,9 +43,6 @@
                                       [com.cemerick/piggieback "0.2.1"]
                                       [org.clojure/tools.nrepl "0.2.12"]
                                       [org.slf4j/slf4j-nop "1.7.13"]]
-                       :figwheel     {:css-dirs       ["resources/public/css"]
-                                      :server-logfile "log/figwheel-logfile.log"
-                                      :ring-handler   reagent-toolbox-docs.core/app}
                        :repl-options {:nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]}}
              :uberjar {:omit-source true
                        :aot         :all
