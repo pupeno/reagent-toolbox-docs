@@ -49,7 +49,7 @@
          [:td [:code "false"]]
          [:td "If true, the dialog will be active."]]
         [:tr
-         [:td [:code "className"]]
+         [:td [:code "class-name"]]
          [:td [:code "string"]]
          [:td [:code "\"\""]]
          [:td "Sets a class to give customized styles to the dialog."]]
