@@ -44,6 +44,7 @@
                 ["Button" :button]
                 ["Card" :card]
                 ["Checkbox" :checkbox]
+                ["Dialog" :dialog]
                 ["Drawer" :drawer]
                 ["Dropdown" :dropdown]
                 ["Font Icon" :font-icon]

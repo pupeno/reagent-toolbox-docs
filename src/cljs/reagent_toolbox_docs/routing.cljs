@@ -14,6 +14,7 @@
                           [:button [["button"]]]
                           [:card [["card"]]]
                           [:checkbox [["checkbox"]]]
+                          [:dialog [["dialog"]]]
                           [:drawer [["drawer"]]]
                           [:dropdown [["dropdown"]]]
                           [:font-icon [["font-icon"]]]
