@@ -1,4 +1,4 @@
-;;;; Copyright © 2017 Flexpoint Tech Ltd
+;;;; Copyright © 2017 Flexpoint Tech Ltd.
 
 (ns reagent-toolbox-docs.components.tabs
   (:require [reagent-toolbox-docs.ui :as ui]

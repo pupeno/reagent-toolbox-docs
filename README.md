@@ -37,6 +37,6 @@ Sponsored by [Dashman](https://dashman.tech), the ultimate office dashboard mana
 
 ## License
 
-Copyright © 2017 Flexpoint Tech Ltd
+Copyright © 2017 Flexpoint Tech Ltd.
 
 Distributed under the Eclipse Public License either version 1.0 or (at your option) any later version.

@@ -1,4 +1,4 @@
-;;;; Copyright © 2017 Flexpoint Tech Ltd
+;;;; Copyright © 2017 Flexpoint Tech Ltd.
 
 (ns reagent-toolbox-docs.core
   (:require [reagent.core :as reagent]
@@ -9,6 +9,7 @@
             reagent-toolbox-docs.components.button
             reagent-toolbox-docs.components.card
             reagent-toolbox-docs.components.checkbox
+            reagent-toolbox-docs.components.dialog
             reagent-toolbox-docs.components.drawer
             reagent-toolbox-docs.components.dropdown
             reagent-toolbox-docs.components.font-icon

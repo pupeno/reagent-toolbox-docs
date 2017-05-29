@@ -1,4 +1,4 @@
-;;;; Copyright © 2017 Flexpoint Tech Ltd
+;;;; Copyright © 2017 Flexpoint Tech Ltd.
 
 (ns reagent-toolbox-docs.layout
   (:require [cljs.pprint :as pp]
@@ -60,7 +60,7 @@
                 ["Time Picker" :time-picker]])]]
         [:main.content ^{:key @current-route} [pages @current-route]]]
        [:footer
-        [:p "Sponsored by " [:a {:href "https://dashman.tech"} [:img.dashman-logo {:src "/favicon-16x16.png"}] " Dashman"] ". Copyright © 2017 Flexpoint Tech."]]])))
+        [:p "Sponsored by " [:a {:href "https://dashman.tech"} [:img.dashman-logo {:src "/favicon-16x16.png"}] " Dashman"] ". Copyright © 2017 Flexpoint Tech Ltd."]]])))
 
 (defmethod pages :home [_]
   (fn [_]

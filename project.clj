@@ -1,4 +1,4 @@
-;;;; Copyright © 2017 Flexpoint Tech Ltd
+;;;; Copyright © 2017 Flexpoint Tech Ltd.
 
 (defproject tech.dashman/reagent-toolbox-docs "0.1.0-SNAPSHOT"
   :description "Live documentation for Reagent Toolbox"
